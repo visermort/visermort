@@ -1,0 +1,23 @@
+{
+  "name": "visermort",
+  "authors": [
+    "visermort <oxygenn@list.ru>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.12.0",
+    "normalize-strings": "normalize#^1.0.4"
+  }
+}

@@ -1,0 +1,324 @@
+ 	
+.green_normal
+{
+	width: 121px;
+	height: 37px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #faf9f9;
+	-webkit-box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
+	-moz-box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
+	box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
+	border: solid 1px #c1c1c1;
+	background-image: -webkit-linear-gradient(bottom, #74b696, #a5e8cb);
+	background-image: -moz-linear-gradient(bottom, #74b696, #a5e8cb);
+	background-image: -o-linear-gradient(bottom, #74b696, #a5e8cb);
+	background-image: -ms-linear-gradient(bottom, #74b696, #a5e8cb);
+	background-image: linear-gradient(to top, #74b696, #a5e8cb);
+}
+
+.green_hover
+{
+	width: 121px;
+	height: 37px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #faf9f9;
+	-webkit-box-shadow: inset 0 1px rgba(255,255,255,.3);
+	-moz-box-shadow: inset 0 1px rgba(255,255,255,.3);
+	box-shadow: inset 0 1px rgba(255,255,255,.3);
+	border: solid 1px #c1c1c1;
+	background-image: -webkit-linear-gradient(bottom, #659f87, #90dbbd);
+	background-image: -moz-linear-gradient(bottom, #659f87, #90dbbd);
+	background-image: -o-linear-gradient(bottom, #659f87, #90dbbd);
+	background-image: -ms-linear-gradient(bottom, #659f87, #90dbbd);
+	background-image: linear-gradient(to top, #659f87, #90dbbd);
+}
+
+.green_active
+{
+	width: 121px;
+	height: 37px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #faf9f9;
+	-webkit-box-shadow: inset 0 1px rgba(255,255,255,.3);
+	-moz-box-shadow: inset 0 1px rgba(255,255,255,.3);
+	box-shadow: inset 0 1px rgba(255,255,255,.3);
+	border: solid 1px #c1c1c1;
+	background-image: -webkit-linear-gradient(bottom, #497563, #79bba0);
+	background-image: -moz-linear-gradient(bottom, #497563, #79bba0);
+	background-image: -o-linear-gradient(bottom, #497563, #79bba0);
+	background-image: -ms-linear-gradient(bottom, #497563, #79bba0);
+	background-image: linear-gradient(to top, #497563, #79bba0);
+}
+
+.gray_normal
+{
+	width: 121px;
+	height: 37px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #faf9f9;
+	-webkit-box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
+	-moz-box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
+	box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
+	border: solid 1px #c1c1c1;
+	background-image: -webkit-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
+	background-image: -moz-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
+	background-image: -o-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
+	background-image: -ms-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
+	background-image: linear-gradient(to top, #e7e5e4, #faf9f9 94%, #fff);
+}
+
+.gray_hover
+{
+	width: 121px;
+	height: 37px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #faf9f9;
+	-webkit-box-shadow: inset 0 -2px 1px rgba(45,45,45,.04), inset 0 0 3px rgba(201,201,201,.61);
+	-moz-box-shadow: inset 0 -2px 1px rgba(45,45,45,.04), inset 0 0 3px rgba(201,201,201,.61);
+	box-shadow: inset 0 -2px 1px rgba(45,45,45,.04), inset 0 0 3px rgba(201,201,201,.61);
+	border: solid 1px #c1c1c1;
+	background-image: -webkit-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
+	background-image: -moz-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
+	background-image: -o-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
+	background-image: -ms-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
+	background-image: linear-gradient(to top, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
+}
+
+.gray_active
+{
+	width: 121px;
+	height: 37px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #faf9f9;
+	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.22), inset 0 1px rgba(255,255,255,.3);
+	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.22), inset 0 1px rgba(255,255,255,.3);
+	box-shadow: 0 2px 1px rgba(9,9,9,.22), inset 0 1px rgba(255,255,255,.3);
+	border: solid 1px #c3c2c2;
+	background-image: -webkit-linear-gradient(bottom, #7b7878, #a9a8a8);
+	background-image: -moz-linear-gradient(bottom, #7b7878, #a9a8a8);
+	background-image: -o-linear-gradient(bottom, #7b7878, #a9a8a8);
+	background-image: -ms-linear-gradient(bottom, #7b7878, #a9a8a8);
+	background-image: linear-gradient(to top, #7b7878, #a9a8a8);
+}
+
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Rounded-Rectangle-4 {
+    width: 104px;
+    height: 32px;
+    background-position: -5px -5px;
+}
+
+.sprite-Rounded-Rectangle-41 {
+    width: 98px;
+    height: 32px;
+    background-position: -119px -5px;
+}
+
+.sprite-Rounded-Rectangle-42 {
+    width: 112px;
+    height: 32px;
+    background-position: -5px -47px;
+}
+
+.sprite-Rounded-Rectangle-43 {
+    width: 88px;
+    height: 32px;
+    background-position: -127px -47px;
+}
+
+.sprite-X {
+    width: 18px;
+    height: 18px;
+    background-position: -227px -5px;
+}
+
+.sprite-arrow {
+    width: 10px;
+    height: 35px;
+    background-position: -255px -5px;
+}
+
+.sprite-arrow-gray {
+    width: 11px;
+    height: 40px;
+    background-position: -225px -50px;
+}
+
+.sprite-brief-case-1 {
+    width: 54px;
+    height: 55px;
+    background-position: -5px -100px;
+}
+
+.sprite-button-back0 {
+    width: 43px;
+    height: 25px;
+    background-position: -69px -100px;
+}
+
+.sprite-button-back1 {
+    width: 44px;
+    height: 25px;
+    background-position: -122px -100px;
+}
+
+.sprite-button-back2 {
+    width: 53px;
+    height: 25px;
+    background-position: -176px -100px;
+}
+
+.sprite-button-back3 {
+    width: 72px;
+    height: 25px;
+    background-position: -69px -135px;
+}
+
+.sprite-button-back4 {
+    width: 81px;
+    height: 25px;
+    background-position: -151px -135px;
+}
+
+.sprite-checkmark {
+    width: 10px;
+    height: 8px;
+    background-position: -246px -50px;
+}
+
+.sprite-email {
+    width: 17px;
+    height: 13px;
+    background-position: -246px -68px;
+}
+
+.sprite-email-gray {
+    width: 23px;
+    height: 17px;
+    background-position: -246px -91px;
+}
+
+.sprite-facebook {
+    width: 42px;
+    height: 44px;
+    background-position: -5px -170px;
+}
+
+.sprite-facebook-hover {
+    width: 42px;
+    height: 44px;
+    background-position: -57px -170px;
+}
+
+.sprite-file-1 {
+    width: 54px;
+    height: 55px;
+    background-position: -109px -170px;
+}
+
+.sprite-github {
+    width: 42px;
+    height: 44px;
+    background-position: -173px -170px;
+}
+
+.sprite-github-hover {
+    width: 42px;
+    height: 44px;
+    background-position: -225px -170px;
+}
+
+.sprite-graduate-1 {
+    width: 54px;
+    height: 55px;
+    background-position: -5px -224px;
+}
+
+.sprite-iCloud-down {
+    width: 32px;
+    height: 22px;
+    background-position: -242px -118px;
+}
+
+.sprite-key {
+    width: 22px;
+    height: 20px;
+    background-position: -69px -224px;
+}
+
+.sprite-locked {
+    width: 19px;
+    height: 22px;
+    background-position: -173px -224px;
+}
+
+.sprite-menu {
+    width: 25px;
+    height: 21px;
+    background-position: -202px -224px;
+}
+
+.sprite-school-1 {
+    width: 54px;
+    height: 55px;
+    background-position: -275px -5px;
+}
+
+.sprite-skype {
+    width: 20px;
+    height: 20px;
+    background-position: -279px -70px;
+}
+
+.sprite-telephone {
+    width: 17px;
+    height: 22px;
+    background-position: -309px -70px;
+}
+
+.sprite-twitter {
+    width: 42px;
+    height: 44px;
+    background-position: -284px -102px;
+}
+
+.sprite-twitter-hover {
+    width: 42px;
+    height: 44px;
+    background-position: -277px -156px;
+}
+
+.sprite-unlocked {
+    width: 24px;
+    height: 22px;
+    background-position: -277px -210px;
+}
+
+.sprite-vk {
+    width: 42px;
+    height: 44px;
+    background-position: -101px -242px;
+}
+
+.sprite-vk-hover {
+    width: 42px;
+    height: 44px;
+    background-position: -237px -242px;
+}
