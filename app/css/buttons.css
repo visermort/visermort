@@ -215,13 +215,13 @@
     background-position: -246px -91px;
 }
 
-.sprite-facebook {
+.facebook {
     width: 42px;
     height: 44px;
     background-position: -5px -170px;
 }
 
-.sprite-facebook-hover {
+.facebook:hover {
     width: 42px;
     height: 44px;
     background-position: -57px -170px;
@@ -233,13 +233,13 @@
     background-position: -109px -170px;
 }
 
-.sprite-github {
+.github {
     width: 42px;
     height: 44px;
     background-position: -173px -170px;
 }
 
-.sprite-github-hover {
+.github:hover {
     width: 42px;
     height: 44px;
     background-position: -225px -170px;
@@ -293,13 +293,13 @@
     background-position: -309px -70px;
 }
 
-.sprite-twitter {
+.twitter {
     width: 42px;
     height: 44px;
     background-position: -284px -102px;
 }
 
-.sprite-twitter-hover {
+.twitter:hover {
     width: 42px;
     height: 44px;
     background-position: -277px -156px;
@@ -311,13 +311,13 @@
     background-position: -277px -210px;
 }
 
-.sprite-vk {
+.vk {
     width: 42px;
     height: 44px;
     background-position: -101px -242px;
 }
 
-.sprite-vk-hover {
+.vk:hover {
     width: 42px;
     height: 44px;
     background-position: -237px -242px;

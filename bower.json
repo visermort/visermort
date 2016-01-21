@@ -18,6 +18,7 @@
   ],
   "dependencies": {
     "jquery": "^1.12.0",
-    "normalize-strings": "normalize#^1.0.4"
+    "normalize-strings": "normalize#^1.0.4",
+    "modernizr": "2.8.3"
   }
 }
