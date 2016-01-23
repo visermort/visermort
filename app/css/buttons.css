@@ -258,12 +258,6 @@
     background-position: -69px -224px;
 }
 
-.sprite-locked {
-    width: 19px;
-    height: 22px;
-    background-position: -173px -224px;
-}
-
 .sprite-menu {
     width: 25px;
     height: 21px;
@@ -337,9 +331,6 @@
 }
 
 .sprite-unlocked {
-    width: 24px;
-    height: 22px;
-    background-position: -277px -210px;
 }
 
 .vk {
@@ -353,3 +344,23 @@
     height: 44px;
     background-position: -237px -242px;
 }
+.login {
+    position: absolute;
+    top: 21px;
+    left: 167px; 
+    width: 19px;
+    height: 22px;
+    background-position: -173px -224px;
+}
+.login:hover {
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    top: 21px;
+    left: 167px; 
+    width: 24px;
+    height: 22px;
+    background-position: -277px -210px;
+}
+
+

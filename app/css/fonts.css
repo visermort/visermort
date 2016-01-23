@@ -6,3 +6,11 @@
 	font-family: OpenSansRegular;
 	src: url('../fonts/OpenSans-Regular.ttf');
 }
+@font-face {
+	font-family: OpenSansLignt;
+	src: url("../fonts/OpenSans-Light.ttf");
+}
+@font-face {
+	font-family: OpenSansBold;
+	src: url("../fonts/OpenSans-Bold.ttf");
+}
