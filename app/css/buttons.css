@@ -203,11 +203,6 @@
     background-position: -246px -50px;
 }
 
-.sprite-email {
-    width: 17px;
-    height: 13px;
-    background-position: -246px -68px;
-}
 
 .sprite-email-gray {
     width: 23px;
@@ -281,13 +276,49 @@
     background-position: -275px -5px;
 }
 
-.sprite-skype {
+.contact-item-link:after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    top: 1px;
+    left: 48px; 
+    width: 10px;
+    height: 35px;
+    background-position: -255px -5px;
+}
+
+.email:before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    top: 13px;
+    left: 17px; 
+    width: 17px;
+    height: 13px;
+    background-position: -246px -68px;
+}
+
+.skype:before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    top: 11px;
+    left: 17px; 
     width: 20px;
     height: 20px;
     background-position: -279px -70px;
 }
 
-.sprite-telephone {
+.phone:before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    top: 11px;
+    left: 17px; 
     width: 17px;
     height: 22px;
     background-position: -309px -70px;
