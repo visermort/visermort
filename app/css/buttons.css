@@ -161,11 +161,6 @@
     background-position: -225px -50px;
 }
 
-.sprite-brief-case-1 {
-    width: 54px;
-    height: 55px;
-    background-position: -5px -100px;
-}
 
 .sprite-button-back0 {
     width: 43px;
@@ -222,12 +217,6 @@
     background-position: -57px -170px;
 }
 
-.sprite-file-1 {
-    width: 54px;
-    height: 55px;
-    background-position: -109px -170px;
-}
-
 .github {
     width: 42px;
     height: 44px;
@@ -240,11 +229,6 @@
     background-position: -225px -170px;
 }
 
-.sprite-graduate-1 {
-    width: 54px;
-    height: 55px;
-    background-position: -5px -224px;
-}
 
 .sprite-iCloud-down {
     width: 32px;
@@ -264,11 +248,6 @@
     background-position: -202px -224px;
 }
 
-.sprite-school-1 {
-    width: 54px;
-    height: 55px;
-    background-position: -275px -5px;
-}
 
 .contact-item-link:after {
     content: '';
@@ -363,4 +342,48 @@
     background-position: -277px -210px;
 }
 
+.job-item:after {
+    content: " ";
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    top:15px;
+    left:0;   
+    width: 54px;
+    height: 55px;
+    background-position: -5px -100px;
+}
+.school-item:after {
+    content: " ";
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    top:15px;
+    left:0;   
+    width: 54px;
+    height: 55px;
+    background-position: -275px -5px;
+}
+.student-item:after {
+    content: " ";
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    top:15px;
+    left:0;   
+    width: 54px;
+    height: 55px;
+    background-position: -5px -224px;
+}
 
+.loftschool-item:after {
+    content: " ";
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    top:15px;
+    left:0;   
+    width: 54px;
+    height: 55px;
+    background-position: -109px -170px;
+}

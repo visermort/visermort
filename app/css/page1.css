@@ -1,0 +1,105 @@
+.info-photo, .info-text {
+	display:inline-block;
+}
+.info-photo {
+ 	width: 150px;
+	height: 150px;
+	position: relative;
+
+	border-radius: 50%;
+	border: 1px solid #d0d0d0;
+	position: relative;
+	-webkit-box-shadow: inset 0px 0px 8px 4px rgba(50, 50, 50, 0.05);
+    -moz-box-shadow:    inset 0px 0px 8px 4px rgba(50, 50, 50, 0.05);
+    box-shadow:         inset 0px 0px 8px 4px rgba(50, 50, 50, 0.05);
+	
+}
+.box-photo {
+	width: 132px;
+	height: 132px;
+	border-radius: 50%;
+	background-color: #fbfbfb;
+	overflow: hidden;
+	position: absolute;
+	top: 9px;
+	left: 9px;
+}
+
+.info-text {
+	/*margin-left:200px;*/
+	vertical-align: top;
+	width:373px ;
+	padding-left: 0;
+	margin-left: 34px;
+	margin-top: -8px;
+}
+
+.main-info-item {
+	font-family: OpenSansSemibold;
+	font-size: 14px;
+	color: #727070;
+	line-height: 28px;
+}
+.skills {
+	color: #1e7465;
+	font-family: OpenSansSemibold;
+	font-size: 9px;
+	background: url(../images/skill-center.png)  repeat-x;
+   margin : 0 0 0 24px;
+   padding: 0 4px 0 4px;  
+   height: 20px;   
+   display: inline-block;
+   position: relative;
+}
+.skills:before{
+	content: " ";
+	background: url(../images/skill-start.png) no-repeat;
+	width: 10px;
+    height: 20px;
+	top: 0px;
+	left: 0;
+	position: absolute;
+	margin-left: -10px;
+}
+.skills:after {
+	content: " ";
+	background: url(../images/skill-back.png) no-repeat;
+	width: 4px;
+    height: 20px;
+	top: 0px;
+	right: 0;
+	position: absolute;
+	margin-right: -4px;
+}
+.skills-list {
+	margin-top: 5px;
+	width: 220px;
+	float:right;
+	position: relative;
+
+}
+
+.content-items {
+	font-family: OpenSansSemibold;
+	font-size: 14px; 
+	line-height: 18px;
+	color: #727070;
+	/*border-bottom: 1px solid #727070 ;*/
+}
+.content-strins {
+	/*width: 556px;
+*/	margin: 0 41px 0 42px;
+	display: block;
+	/*height: 90px;*/
+	position: relative;
+	padding: 18px 24px 28px 95px;
+}
+.content-strins:not(.last) {
+border-bottom: 1px solid #727070;
+}
+.content-notmain {
+	padding: 19px 0 25px 0;
+}
+.content-string {
+	margin-top: 4px;
+}
