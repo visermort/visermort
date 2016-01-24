@@ -387,3 +387,15 @@
     height: 55px;
     background-position: -109px -170px;
 }
+
+/*.page-add:before {
+    content: " ";
+    position: absolute;
+    background-image: url(../images/polaroid-1.png);
+    background-repeat: no-repeat;
+    top: 22px;
+    left: 48px;   
+    width: 64px;
+    height: 64px;
+}
+*/

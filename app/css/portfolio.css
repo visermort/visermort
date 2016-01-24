@@ -1,0 +1,89 @@
+.content-content {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 6px;
+}
+.pages {
+	/*margin-left: 0;*/
+}
+.page, .page-add {
+	margin-top: 30px;
+	display:block;
+	float:left;
+	margin-left: 40px;
+	width: 164px;
+}
+.page {
+   	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.07);
+	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.07);
+	box-shadow: 0 2px 1px rgba(9,9,9,.07);
+	border: solid 1px #b6b6b6;
+	overflow: hidden;
+}
+.page-title, .page-add-link {
+	color: #727070;
+	font-family: OpenSansSemibold;
+	text-align: center;
+	font-size: 13px;
+}
+.page-title {
+	background-color: #f2f2f2;
+	padding: 9px;
+}
+.page-description {
+	color: #727070;
+	font-family: OpenSansLight;
+	text-align: center;
+	font-size: 12px;
+/*	padding: 9px;
+*/}
+
+	
+.page-add {
+	position:relative;
+	height: 131px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
+	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
+	box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
+	border: solid 1px #b6b6b6;
+	background-image: -webkit-linear-gradient(bottom, #edebea, #fbf9f9 94%, #fff);
+	background-image: -moz-linear-gradient(bottom, #edebea, #fbf9f9 94%, #fff);
+	background-image: -o-linear-gradient(bottom, #edebea, #fbf9f9 94%, #fff);
+	background-image: -ms-linear-gradient(bottom, #edebea, #fbf9f9 94%, #fff);
+	background-image: linear-gradient(to top, #edebea, #fbf9f9 94%, #fff);
+}
+
+.page-add-link {
+    width: 164px;
+}
+.page-add-image {
+	padding: 25px 0 0 48px;
+	padd
+}
+.page-add-text {
+	margin: 0;
+	padding: 6px 0 14px 0;
+}
+.page-image {
+}
+.page-image:hover {
+	filter: alpha (Opacity=50); /*ie*/
+    opacity: 0.5;
+    background-color: rgba(219,127,8, 0.7);
+ /*   transition: all 0.4s ease-in-out;
+ */   -moz-transition: all 1s ease-in-out; /* эффект перехода для Firefox до версии 16.0 */
+    -webkit-transition: all 1s ease-in-out; /* эффект перехода для Chrome до версии 26.0, Safari, Android и iOS */
+    -o-transition: all 1s ease-in-out; /* эффект перехода для Opera до версии 12.10 */
+    transition: all 1s ease-in-out; /* эффект перехода для других браузеров */
+
+
+}
+

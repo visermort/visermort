@@ -15,8 +15,10 @@ a {
 	text-decoration: none;
   }
 
-h1,h2,h3,h4,h5,h6,ul {
+/*поскольку сверстали без normalize.css , то приходится, чтобы макет не ушёл*/
+h1,h2,h3,h4,h5,h6,ul,li,div {
 	margin: 0;
+	padding: 0;
 }
 
 .wrapper {
