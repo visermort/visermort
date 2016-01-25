@@ -4,9 +4,10 @@
 	font-size: 14px;
 	font-family: OpenSansRegular;
 	margin-left: 82px;
+	margin-top: -9px;
 }
 .block-input {
-	 width: 192px;
+	 width: 190px;
 	 display: inline-block;
 }
 
@@ -43,8 +44,8 @@
 
 
 .input-message {
-	width: 405px;
-	height: 183px;
+	width: 400px;
+	height: 180px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -69,14 +70,15 @@
 	display:inline-block;
 }
 .input-captcha {
-	margin: 26px 0 0 17px;
+	margin: 20px 0 0 16px;
+	height: 28px;
 }
 
 .form-message-buttons {
-	margin : 32px 0 10px 30px;
+	margin : 28px 0 10px 30px;
 }
 .button-reset {
-	margin-left: 100px;
+	margin-left: 96px;
 }
 
 .button-submit {

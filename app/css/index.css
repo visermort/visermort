@@ -38,14 +38,17 @@
 	font-family: OpenSansSemibold;
 	font-size: 14px;
 	color: #727070;
-	line-height: 28px;
+	line-height: 26px;
+}
+.main-info-item:last-child {
+	margin-top: 6px;
 }
 .skills {
 	color: #1e7465;
 	font-family: OpenSansSemibold;
 	font-size: 9px;
 	background: url(../images/skill-center.png)  repeat-x;
-   margin : 0 0 0 24px;
+   margin : 0 0 0 20px;
    padding: 0 4px 0 4px;  
    height: 20px;   
    display: inline-block;
@@ -72,15 +75,15 @@
 	margin-right: -4px;
 }
 .skills-list {
-	margin-top: 5px;
-	width: 220px;
+	margin-top: 4px;
+	width: 238px;
 	float:right;
 	position: relative;
 
 }
 
 .content-items {
-	font-family: OpenSansSemibold;
+	font-family: OpenSansRegular;
 	font-size: 14px; 
 	line-height: 18px;
 	color: #727070;
@@ -92,13 +95,16 @@
 	display: block;
 	/*height: 90px;*/
 	position: relative;
-	padding: 18px 24px 28px 95px;
+	padding: 20px 24px 28px 95px;
+}
+.content-string:first-child {
+	font-family: OpenSansSemibold;
 }
 .content-strins:not(.last) {
 border-bottom: 1px solid #727070;
 }
 .content-notmain {
-	padding: 19px 0 25px 0;
+	padding: 19px 0 20px 0;
 }
 .content-string {
 	margin-top: 4px;

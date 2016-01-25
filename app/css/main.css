@@ -1,6 +1,12 @@
 @import url('buttons.css');
 @import url('fonts.css');
 
+h1,h2,h3,h4,h5,h6,ul,li,div {
+	margin: 0;
+	padding: 0;
+}
+
+/*основной макет*/
 
 body {
 	background-image: url(../images/background.jpg);
@@ -14,12 +20,6 @@ body, html {
 a {
 	text-decoration: none;
   }
-
-/*поскольку сверстали без normalize.css , то приходится, чтобы макет не ушёл*/
-h1,h2,h3,h4,h5,h6,ul,li,div {
-	margin: 0;
-	padding: 0;
-}
 
 .wrapper {
     min-height:  100%;
@@ -36,6 +36,7 @@ h1,h2,h3,h4,h5,h6,ul,li,div {
 	position:relative;
 }
 
+/*шапка*/
 .header {
 	height: 90px;
 	background-color: #767474;
@@ -47,6 +48,7 @@ h1,h2,h3,h4,h5,h6,ul,li,div {
 	margin: 0 auto;
 }
 .content, .footer-content  {
+	width: 960px;
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -71,17 +73,19 @@ h1,h2,h3,h4,h5,h6,ul,li,div {
     float: right;
     margin-top: 23px;
     padding: 0;
+    margin-right: -4px;
 }
 .social-item {
 	list-style-type: none;
 	display:inline-block;
 }
 .social-item-link {
-	margin-left: 6px;
+	margin-left: 5px;
 	text-indent: -9999px;
 
 }
 
+/*clearfix*/
 .clearfix:before, .clearfix:after {
 	content: " ";
 	display: table;
@@ -95,9 +99,13 @@ h1,h2,h3,h4,h5,h6,ul,li,div {
 
 }
 
+
 .content {
-	margin: 34px auto 0 ;
+	margin: 32px auto 0 ;
 }
+
+
+/*главное меню*/
 .nav, .contacts {
 	padding: 0;
 }
@@ -119,7 +127,7 @@ li {
 	font-family: OpenSansSemibold;
 	font-size: 20px;
 	color: #727070;
-	padding: 17px 0 17px 29px;
+	padding: 13px 0 13px 29px;
 	-webkit-border-radius: 0 0 3px 3px;
 	-moz-border-radius: 0 0 3px 3px;
 	border-radius: 0 0 3px 3px;
@@ -196,11 +204,13 @@ li {
   z-index: 67;
 }
 
+/*меню контакты*/
+
 .contacts-block {
 	margin-top: 35px;
 }
 .contacts-block .block-header {
-	padding: 10px 0 10px 30px;
+	padding: 9px 0 9px 30px;
 	color: #d0982c;
 	font-family: OpenSansSemibold;
 	font-size: 20px;
@@ -210,7 +220,7 @@ li {
 	font-family: OpenSansRegular;
 	font-size: 14px;
 	color: #727070;
-	padding: 11px 0 11px 97px;
+	padding: 8px 0 8px 97px;
 	display: block;
 	text-decoration: none;
 	position: relative;
@@ -259,6 +269,8 @@ li {
 	background-image: linear-gradient(to top, rgba(224,197,145,.45), rgba(251,249,249,0));
 }
 
+
+/*содержание фуутера*/
 .footer-content {
 	padding-top: 21px;
 	position: relative;
@@ -272,7 +284,7 @@ li {
 	color: #727070;
 	font-family:  OpenSansBold;
 	font-size: 14px;
-	padding-left: 26px;
+	padding-left: 28px;
 } 
 .footer-text {
 	display: inline-block;
@@ -282,14 +294,16 @@ li {
 	padding-left: 290px;
 }
 
+
+/*основное содержимое*/
 .content-area {
-	margin-left: 303px;
+	margin-left: 310px;
 /*	float:right;
 	width: 652px;*/
 }
 
 .content-header {
-	padding: 15px 0 15px 42px;
+	padding: 11px 0 10px 42px;
     color: #eeedec;
     font-size: 24px;
 	font-family: OpenSansSemibold ;
