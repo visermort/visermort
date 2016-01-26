@@ -1,4 +1,4 @@
- 	
+/* 	
 .green_normal
 {
 	width: 121px;
@@ -111,7 +111,7 @@
 	background-image: -o-linear-gradient(bottom, #7b7878, #a9a8a8);
 	background-image: -ms-linear-gradient(bottom, #7b7878, #a9a8a8);
 	background-image: linear-gradient(to top, #7b7878, #a9a8a8);
-}
+}*/
 
 .sprite {
     background-image: url(../images/spritesheet.png);
@@ -254,7 +254,7 @@
     position: absolute;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
-    top: 1px;
+    top: 0px;
     left: 48px; 
     width: 10px;
     height: 35px;

@@ -6,6 +6,22 @@ h1,h2,h3,h4,h5,h6,ul,li,div {
 	padding: 0;
 }
 
+/*clearfix*/
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.sidebar {
+	float: left;
+	width: 250px;
+}
+.content {
+	margin: 32px auto 0 ;
+}
+
 /*основной макет*/
 
 body {
@@ -16,6 +32,7 @@ body {
 body, html {
 	width: 100%;
 	height: 100%;
+	min-width: 960px;
 }
 a {
 	text-decoration: none;
@@ -48,7 +65,6 @@ a {
 	margin: 0 auto;
 }
 .content, .footer-content  {
-	width: 960px;
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -65,7 +81,7 @@ a {
 	left: -9999px;
 }
 .logo-image {
-	width: 95px;
+	width: 126px;
 	margin: 9px 0 0 9px;
 }
 .socials {
@@ -85,25 +101,6 @@ a {
 
 }
 
-/*clearfix*/
-.clearfix:before, .clearfix:after {
-	content: " ";
-	display: table;
-}
-.clearfix:after {
-	clear: both;
-}
-.sidebar {
-	float: left;
-	width: 250px;
-
-}
-
-
-.content {
-	margin: 32px auto 0 ;
-}
-
 
 /*главное меню*/
 .nav, .contacts {
@@ -120,6 +117,7 @@ li {
 .nav-item, .contacts-item {
 	overflow: hidden;
 }
+
 .menu-item-link {
 	display: block;
 	text-align: left;
@@ -128,10 +126,7 @@ li {
 	font-size: 20px;
 	color: #727070;
 	padding: 13px 0 13px 29px;
-	-webkit-border-radius: 0 0 3px 3px;
-	-moz-border-radius: 0 0 3px 3px;
-	border-radius: 0 0 3px 3px;
-	background-color: #bfbfbf;
+	background-color: #e9e6e5; /*#bfbfbf;*/
 	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
 	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
 	box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
@@ -142,6 +137,8 @@ li {
 	background-image: -ms-linear-gradient(bottom, #e9e6e5, #fbf9f9 94%, #fff);
 	background-image: linear-gradient(to top, #e9e6e5, #fbf9f9 94%, #fff);
 }
+
+
 .menu-item-link:hover {
 	background-color: #bfbfbf;
 	-webkit-box-shadow: inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px rgba(202,202,202,.61);
@@ -153,56 +150,7 @@ li {
 	background-image: -ms-linear-gradient(bottom, #c2c0c0, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7);
 	background-image: linear-gradient(to top, #c2c0c0, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7);
 }
-.about .about-link,
-.portfolio .portfolio-link,
-.contact  .contact-link {
-	-webkit-border-radius: 3px 3px 0 0;
-	-moz-border-radius: 3px 3px 0 0;
-	background-color: #bfbfbf;
-	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-	box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-	border: solid 1px #c3c2c2;
-	background-image: -webkit-linear-gradient(bottom, #3eb799, #7ee8ce);
-	background-image: -moz-linear-gradient(bottom, #3eb799, #7ee8ce);
-	background-image: -o-linear-gradient(bottom, #3eb799, #7ee8ce);
-	background-image: -ms-linear-gradient(bottom, #3eb799, #7ee8ce);
-	background-image: linear-gradient(to top, #3eb799, #7ee8ce);
-}
-.nav-item:first-child, .block-header {
-	border-radius: 5px 5px 0 0;
 
-}
-.nav-item:last-child, .contacts-item:last-child {
-	-webkit-border-radius: 0 0 5px 5px;
-	-moz-border-radius: 0 0 5px 5px;
-	border-radius: 0 0 5px 5px;
-}
-
-.active {
-  background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
-  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-  z-index: 64;
-}
-
-._3_butt {
-  background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-
-  z-index: 65;
-}
-._2_butt_hover {
-  background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
-  box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-
-  z-index: 67;
-}
 
 /*меню контакты*/
 
@@ -231,7 +179,7 @@ li {
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
-	background-color: #fffbf9;
+	background-color: ##f4cc7e;
 	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.17), inset 0 1px rgba(255,255,255,.25), inset 0 0 3px rgba(246,247,247,.15);
 	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.17), inset 0 1px rgba(255,255,255,.25), inset 0 0 3px rgba(246,247,247,.15);
 	box-shadow: 0 2px 1px rgba(9,9,9,.17), inset 0 1px rgba(255,255,255,.25), inset 0 0 3px rgba(246,247,247,.15);
@@ -257,7 +205,7 @@ li {
 }
 
 .contact-item-link:hover {
-	background-color: #fff;
+	background-color: #f2e7d2;
 	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.15), inset 0 2px 2px rgba(114,112,112,.1);
 	-moz-box-shadow: 0 0 1px rgba(255,255,255,.15), inset 0 2px 2px rgba(114,112,112,.1);
 	box-shadow: 0 0 1px rgba(255,255,255,.15), inset 0 2px 2px rgba(114,112,112,.1);

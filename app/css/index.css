@@ -48,18 +48,20 @@
 	font-family: OpenSansSemibold;
 	font-size: 9px;
 	background: url(../images/skill-center.png)  repeat-x;
-   margin : 0 0 0 20px;
+	background-position: 0 4px;
+   margin : 0 0 0 18px;
    padding: 0 4px 0 4px;  
-   height: 20px;   
+   height: 26px;   
    display: inline-block;
    position: relative;
+ 
 }
 .skills:before{
 	content: " ";
 	background: url(../images/skill-start.png) no-repeat;
 	width: 10px;
     height: 20px;
-	top: 0px;
+	top: 4px;
 	left: 0;
 	position: absolute;
 	margin-left: -10px;
@@ -69,17 +71,16 @@
 	background: url(../images/skill-back.png) no-repeat;
 	width: 4px;
     height: 20px;
-	top: 0px;
+	top: 4px;
 	right: 0;
 	position: absolute;
 	margin-right: -4px;
 }
 .skills-list {
-	margin-top: 4px;
-	width: 238px;
+	margin-top: 2px;
+	width: 232px;
 	float:right;
 	position: relative;
-
 }
 
 .content-items {
@@ -101,7 +102,11 @@
 	font-family: OpenSansSemibold;
 }
 .content-strins:not(.last) {
-border-bottom: 1px solid #727070;
+border-bottom: 1px solid #dbdbda;
+-webkit-box-shadow:  0 2px rgba(219,219,219,.5);
+-moz-box-shadow:  0 2px rgba(219,219,219,.5) ;
+box-shadow:  0 2px rgba(219,219,219,.5) ;
+
 }
 .content-notmain {
 	padding: 19px 0 20px 0;
@@ -109,3 +114,31 @@ border-bottom: 1px solid #727070;
 .content-string {
 	margin-top: 4px;
 }
+
+
+
+
+/*главное меню - раздельные части страниц
+*/
+.about-link {
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	background-color: #3eb799;/*#bfbfbf*/
+	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+	box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+	border: solid 1px #c3c2c2;
+	background-image: -webkit-linear-gradient(bottom, #3eb799, #7ee8ce);
+	background-image: -moz-linear-gradient(bottom, #3eb799, #7ee8ce);
+	background-image: -o-linear-gradient(bottom, #3eb799, #7ee8ce);
+	background-image: -ms-linear-gradient(bottom, #3eb799, #7ee8ce);
+	background-image: linear-gradient(to top, #3eb799, #7ee8ce);
+}
+.contact-link {
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;	
+}
+
+

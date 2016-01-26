@@ -83,7 +83,90 @@
     -webkit-transition: all 1s ease-in-out; /* эффект перехода для Chrome до версии 26.0, Safari, Android и iOS */
     -o-transition: all 1s ease-in-out; /* эффект перехода для Opera до версии 12.10 */
     transition: all 1s ease-in-out; /* эффект перехода для других браузеров */
-
-
 }
 
+
+/*главное меню - раздельные части страниц
+*/
+.portfolio-link {
+/*	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+*/	background-color: #3eb799;/*#bfbfbf*/
+	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+	box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+	border: solid 1px #c3c2c2;
+	background-image: -webkit-linear-gradient(bottom, #3eb799, #7ee8ce);
+	background-image: -moz-linear-gradient(bottom, #3eb799, #7ee8ce);
+	background-image: -o-linear-gradient(bottom, #3eb799, #7ee8ce);
+	background-image: -ms-linear-gradient(bottom, #3eb799, #7ee8ce);
+	background-image: linear-gradient(to top, #3eb799, #7ee8ce);
+}
+
+.contact-link {
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;	
+}
+.about-link {
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius:  3px 3px 0 0;
+	border-radius:  3px 3px 0 0;	
+}
+
+
+
+
+
+
+/*
+.projects-item {
+    width: 183px;  
+    position: relative;
+    margin: 20px;
+}
+.projects-item .project-img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.projects-item .zoom-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    text-align: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+.projects-item:hover .zoom-wrapper {	
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.projects-item .zoom-link {
+    font-size: 12px;
+    border: 1px solid #eff3f7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 4px;
+}
+.projects-item:hover .project-img{
+	-moz-opacity: 0.20;
+	opacity:.20;
+	filter: alpha(opacity=20);
+}
+.projects-item:hover .hover-img{
+	background-color: rgb( 108, 108, 164);
+}
+
+<div class="projects-item">
+  <div class="hover-img">
+    <img src="http://loremflickr.com/320/240" alt="http://landingsloft.ru/" class="project-img">
+    <div class="zoom-wrapper">
+      <a href="http://landingsloft.ru/" target="_blank" class="zoom-link">landingsloft.ru</a>
+    </div>
+    </div>
+</div>*/
