@@ -8,10 +8,11 @@
 }
 .page, .page-add {
 	margin-top: 30px;
-	display:block;
-	float:left;
+	display:inline-block;
+	/*float:left;*/
 	margin-left: 35px;
 	width: 164px;
+	vertical-align: top;
 }
 .page {
    	-webkit-border-radius: 5px;
@@ -60,6 +61,17 @@
 	background-image: -ms-linear-gradient(bottom, #edebea, #fbf9f9 94%, #fff);
 	background-image: linear-gradient(to top, #edebea, #fbf9f9 94%, #fff);
 }
+
+.page-add:hover {
+	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e7e7', endColorstr='#c2c0c0',GradientType=0 )";
+	-webkit-box-shadow: inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
+	   -moz-box-shadow: inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
+			box-shadow: inset 0 -2px 3px 0 rgba(41, 41, 41, 0.05);
+}
+
 
 .page-add-link {
     width: 164px;
@@ -115,16 +127,12 @@
 	border-radius:  3px 3px 0 0;	
 }
 
+/*ховер на картинку проекта*/
 
-
-
-
-
-/*
 .projects-item {
-    width: 183px;  
+   /* width: 183px;  */
     position: relative;
-    margin: 20px;
+    /*margin: 20px;*/
 }
 .projects-item .project-img {
     box-sizing: border-box;
@@ -159,10 +167,11 @@
 	filter: alpha(opacity=20);
 }
 .projects-item:hover .hover-img{
-	background-color: rgb( 108, 108, 164);
+/*	background-color: rgb( 108, 108, 164);*/
+background-color: rgb(187, 186 , 185);
 }
 
-<div class="projects-item">
+/*<div class="projects-item">
   <div class="hover-img">
     <img src="http://loremflickr.com/320/240" alt="http://landingsloft.ru/" class="project-img">
     <div class="zoom-wrapper">

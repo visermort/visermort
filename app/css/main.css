@@ -102,6 +102,17 @@ a {
 }
 
 
+/*основное содержимое*/
+.content-area {
+/*	margin-left: 310px;*/
+	float:right;
+	width: 651px;
+}
+
+.content {
+	margin-top: 36px;
+}
+
 /*главное меню*/
 .nav, .contacts {
 	padding: 0;
@@ -243,13 +254,6 @@ li {
 }
 
 
-/*основное содержимое*/
-.content-area {
-	margin-left: 310px;
-/*	float:right;
-	width: 652px;*/
-}
-
 .content-header {
 	padding: 11px 0 10px 42px;
     color: #eeedec;
@@ -271,8 +275,8 @@ li {
 }
 
 .content-part {
-	margin-top: 36px;
-	margin-bottom: 38px;
+	/*margin-top: 36px;*/
+	margin-bottom: 36px;
 }
 .content-content {
 	padding: 36px 40px;
