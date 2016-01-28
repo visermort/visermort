@@ -32,20 +32,22 @@
 	padding-left: 0;
 	margin-left: 34px;
 	margin-top: -8px;
+	font-family: OpenSansSemibold;
+	font-size: 14px;
 }
 
 .main-info-item {
-	font-family: OpenSansSemibold;
-	font-size: 14px;
 	color: #727070;
 	line-height: 26px;
+}
+.main-info-item .item-right {
+	font-family : OpenSansRegular;
 }
 .main-info-item:last-child {
 	margin-top: 6px;
 }
 .skills {
 	color: #1e7465;
-	font-family: OpenSansSemibold;
 	font-size: 9px;
 	background: url(../images/skill-center.png)  repeat-x;
 	background-position: 0 4px;
@@ -54,27 +56,29 @@
    height: 26px;   
    display: inline-block;
    position: relative;
- 
 }
+
 .skills:before{
 	content: " ";
-	background: url(../images/skill-start.png) no-repeat;
+	background: url(../images/sprite-skills.png) no-repeat;
 	width: 10px;
     height: 20px;
 	top: 4px;
 	left: 0;
 	position: absolute;
 	margin-left: -10px;
+    background-position: -31px -5px;
 }
 .skills:after {
 	content: " ";
-	background: url(../images/skill-back.png) no-repeat;
+	background: url(../images/sprite-skills.png) no-repeat;
 	width: 4px;
     height: 20px;
 	top: 4px;
 	right: 0;
 	position: absolute;
 	margin-right: -4px;
+    background-position: -5px -5px;
 }
 .skills-list {
 	margin-top: 2px;
@@ -114,8 +118,6 @@ box-shadow:  0 2px rgba(219,219,219,.5) ;
 .content-string {
 	margin-top: 4px;
 }
-
-
 
 
 /*главное меню - раздельные части страниц

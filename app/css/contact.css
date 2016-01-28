@@ -49,6 +49,7 @@
 
 
 .input-message {
+	resize: none;
 	width: 400px;
 	height: 180px;
 	padding: 12px 9px;

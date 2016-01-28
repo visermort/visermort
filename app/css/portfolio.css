@@ -84,27 +84,24 @@
 	margin: 0;
 	padding: 6px 0 14px 0;
 }
-.page-image {
+/*.page-image {
 }
 .page-image:hover {
-	filter: alpha (Opacity=50); /*ie*/
+	filter: alpha (Opacity=50); 
     opacity: 0.5;
     background-color: rgba(219,127,8, 0.7);
- /*   transition: all 0.4s ease-in-out;
- */   -moz-transition: all 1s ease-in-out; /* эффект перехода для Firefox до версии 16.0 */
-    -webkit-transition: all 1s ease-in-out; /* эффект перехода для Chrome до версии 26.0, Safari, Android и iOS */
-    -o-transition: all 1s ease-in-out; /* эффект перехода для Opera до версии 12.10 */
-    transition: all 1s ease-in-out; /* эффект перехода для других браузеров */
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 1s ease-in-out; 
+    -webkit-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out; 
 }
-
+*/
 
 /*главное меню - раздельные части страниц
 */
 .portfolio-link {
-/*	-webkit-border-radius: 3px 3px 0 0;
-	-moz-border-radius: 3px 3px 0 0;
-	border-radius: 3px 3px 0 0;
-*/	background-color: #3eb799;/*#bfbfbf*/
+	background-color: #3eb799;/*#bfbfbf*/
 	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
 	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
 	box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
@@ -171,11 +168,3 @@
 background-color: rgb(187, 186 , 185);
 }
 
-/*<div class="projects-item">
-  <div class="hover-img">
-    <img src="http://loremflickr.com/320/240" alt="http://landingsloft.ru/" class="project-img">
-    <div class="zoom-wrapper">
-      <a href="http://landingsloft.ru/" target="_blank" class="zoom-link">landingsloft.ru</a>
-    </div>
-    </div>
-</div>*/

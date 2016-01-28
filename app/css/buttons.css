@@ -1,118 +1,3 @@
-/* 	
-.green_normal
-{
-	width: 121px;
-	height: 37px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #faf9f9;
-	-webkit-box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
-	-moz-box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
-	box-shadow: 0 2px 1px rgba(17,17,17,.16), inset 0 1px rgba(255,255,255,.3);
-	border: solid 1px #c1c1c1;
-	background-image: -webkit-linear-gradient(bottom, #74b696, #a5e8cb);
-	background-image: -moz-linear-gradient(bottom, #74b696, #a5e8cb);
-	background-image: -o-linear-gradient(bottom, #74b696, #a5e8cb);
-	background-image: -ms-linear-gradient(bottom, #74b696, #a5e8cb);
-	background-image: linear-gradient(to top, #74b696, #a5e8cb);
-}
-
-.green_hover
-{
-	width: 121px;
-	height: 37px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #faf9f9;
-	-webkit-box-shadow: inset 0 1px rgba(255,255,255,.3);
-	-moz-box-shadow: inset 0 1px rgba(255,255,255,.3);
-	box-shadow: inset 0 1px rgba(255,255,255,.3);
-	border: solid 1px #c1c1c1;
-	background-image: -webkit-linear-gradient(bottom, #659f87, #90dbbd);
-	background-image: -moz-linear-gradient(bottom, #659f87, #90dbbd);
-	background-image: -o-linear-gradient(bottom, #659f87, #90dbbd);
-	background-image: -ms-linear-gradient(bottom, #659f87, #90dbbd);
-	background-image: linear-gradient(to top, #659f87, #90dbbd);
-}
-
-.green_active
-{
-	width: 121px;
-	height: 37px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #faf9f9;
-	-webkit-box-shadow: inset 0 1px rgba(255,255,255,.3);
-	-moz-box-shadow: inset 0 1px rgba(255,255,255,.3);
-	box-shadow: inset 0 1px rgba(255,255,255,.3);
-	border: solid 1px #c1c1c1;
-	background-image: -webkit-linear-gradient(bottom, #497563, #79bba0);
-	background-image: -moz-linear-gradient(bottom, #497563, #79bba0);
-	background-image: -o-linear-gradient(bottom, #497563, #79bba0);
-	background-image: -ms-linear-gradient(bottom, #497563, #79bba0);
-	background-image: linear-gradient(to top, #497563, #79bba0);
-}
-
-.gray_normal
-{
-	width: 121px;
-	height: 37px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #faf9f9;
-	-webkit-box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
-	-moz-box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
-	box-shadow: 0 2px 1px rgba(17,17,17,.07), inset 0 -2px 3px rgba(45,45,45,.05), inset 0 0 3px #f6f6f7;
-	border: solid 1px #c1c1c1;
-	background-image: -webkit-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-	background-image: -moz-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-	background-image: -o-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-	background-image: -ms-linear-gradient(bottom, #e7e5e4, #faf9f9 94%, #fff);
-	background-image: linear-gradient(to top, #e7e5e4, #faf9f9 94%, #fff);
-}
-
-.gray_hover
-{
-	width: 121px;
-	height: 37px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #faf9f9;
-	-webkit-box-shadow: inset 0 -2px 1px rgba(45,45,45,.04), inset 0 0 3px rgba(201,201,201,.61);
-	-moz-box-shadow: inset 0 -2px 1px rgba(45,45,45,.04), inset 0 0 3px rgba(201,201,201,.61);
-	box-shadow: inset 0 -2px 1px rgba(45,45,45,.04), inset 0 0 3px rgba(201,201,201,.61);
-	border: solid 1px #c1c1c1;
-	background-image: -webkit-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-	background-image: -moz-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-	background-image: -o-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-	background-image: -ms-linear-gradient(bottom, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-	background-image: linear-gradient(to top, #c0bebe, #e2e0e0 86%, #e2e0e0 87%, #e7e6e6);
-}
-
-.gray_active
-{
-	width: 121px;
-	height: 37px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #faf9f9;
-	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.22), inset 0 1px rgba(255,255,255,.3);
-	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.22), inset 0 1px rgba(255,255,255,.3);
-	box-shadow: 0 2px 1px rgba(9,9,9,.22), inset 0 1px rgba(255,255,255,.3);
-	border: solid 1px #c3c2c2;
-	background-image: -webkit-linear-gradient(bottom, #7b7878, #a9a8a8);
-	background-image: -moz-linear-gradient(bottom, #7b7878, #a9a8a8);
-	background-image: -o-linear-gradient(bottom, #7b7878, #a9a8a8);
-	background-image: -ms-linear-gradient(bottom, #7b7878, #a9a8a8);
-	background-image: linear-gradient(to top, #7b7878, #a9a8a8);
-}*/
-
 .sprite {
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
@@ -353,8 +238,9 @@
     height: 55px;
     background-position: -5px -100px;
 }
-.school-item:after {
-    content: " ";
+
+.study-item:after {
+   content: " ";
     position: absolute;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
@@ -362,40 +248,40 @@
     left:0;   
     width: 54px;
     height: 55px;
+}
+
+.school:after {
     background-position: -275px -5px;
 }
-.student-item:after {
-    content: " ";
-    position: absolute;
-    background-image: url(../images/spritesheet.png);
-    background-repeat: no-repeat;
-    top:15px;
-    left:0;   
-    width: 54px;
-    height: 55px;
+.student:after {
     background-position: -5px -224px;
 }
 
-.loftschool-item:after {
-    content: " ";
-    position: absolute;
-    background-image: url(../images/spritesheet.png);
-    background-repeat: no-repeat;
-    top:15px;
-    left:0;   
-    width: 54px;
-    height: 55px;
+.loftschool:after {
     background-position: -109px -170px;
 }
 
-/*.page-add:before {
-    content: " ";
-    position: absolute;
-    background-image: url(../images/polaroid-1.png);
+/*.sprite-skills {
+    background-image: url(sprite-skills.png);
     background-repeat: no-repeat;
-    top: 22px;
-    left: 48px;   
-    width: 64px;
-    height: 64px;
+    display: block;
+}
+
+.sprite-skill-back {
+    width: 4px;
+    height: 20px;
+    background-position: -5px -5px;
+}
+
+.sprite-skill-center {
+    width: 2px;
+    height: 20px;
+    background-position: -19px -5px;
+}
+
+.sprite-skill-start {
+    width: 10px;
+    height: 20px;
+    background-position: -31px -5px;
 }
 */
