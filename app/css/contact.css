@@ -182,3 +182,9 @@
 	background-image: -o-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
 	background-image: -ms-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
 	background-image: linear-gradient(to top, rgba(233,231,231,.45), rgba(251,249,249,0));}
+
+
+.qtip-customclass {
+	border-color: red;
+	font-size: 13px;
+}

@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="js/qtip/jquery.qtip.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body class="contact">
@@ -83,21 +84,21 @@
 				<form action="send-message" method="POST" class="form-message">
 					<div class="block-input block-input-name"> 
 						<span class="label-input">Имя</span>
-						<input type="text" class="send-message__input input-name placeholder" placeholder="Как в Вам орбащаться">
+						<input type="text" class="send-message__input input-name placeholder" placeholder="Как в Вам орбащаться" title="Вы не ввели имя">
 					</div>
 					<div class="block-input block-input-email"> 
 						<span class="label-input">Email</span>
-						<input type="text" class="send-message__input input-email placeholder" placeholder="Куда мне писать">
+						<input type="text" class="send-message__input input-email placeholder" placeholder="Куда мне писать" title="Вы не ввели email">
 					</div>
 					<div class="block-input-message block-message"> 
 						<span class="label-input">Сообщение</span>
 						<!-- <input type="text" class="input-message placeholder" placeholder="Кратко в чём суть"> -->
-						<textarea  cols="40" rows="6"  class="send-message__input input-message placeholder" placeholder="Кратко в чём суть"></textarea>
+						<textarea  cols="40" rows="6"  class="send-message__input input-message placeholder" placeholder="Кратко в чём суть" title="Что вы от меня хотите"></textarea>
 					</div>
 					<div class="block-captcha  clearfix">
 						<span class="label-input ">Введите код, указанный на картинке</span>
 						<img src="images/captcha.gif"  alt="captcha" class="image-captcha">
-						<input type="text" class="send-message__input input-captcha placeholder" placeholder="Введите код">
+						<input type="text" class="send-message__input input-captcha placeholder" placeholder="Введите код" title="Вы не ввели код">
 					</div>
 					<div class="form-message-buttons">
 						<input type="submit" class="button-submit" value="Отправить">
@@ -124,9 +125,11 @@
 	</div>
 </footer>
 
-
-
-	<script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="bower/jquery/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"> </script>
+    <script type="text/javascript" src="js/qtip/jquery.qtip.min.js"></script>
+    <script type="text/javascript" src="js/qtip/jquery.qtip.js"></script>
+	<script type="text/javascript" src="bower/bPopup/jquery.bpopup.js"></script>
+    <script type="text/javascript" src="js/qtip/imagesloaded.pkg.min.js"></script>
 </body>
 </html>
