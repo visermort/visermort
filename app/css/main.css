@@ -339,7 +339,7 @@ li {
 */}
 
 
-.form-register__label {
+.form-register__label, .pade-add-project__label {
 	margin: -22px 0 0 20px;
 }
 
@@ -395,12 +395,13 @@ li {
 /*	margin: 18px 0px;
 */	
 }
-.register-submit {
+.register-submit, .project-add-submit {
 	margin: 20px 0 0 54px;
 	font-family: OpenSansSemibold;
 	color: #227464;
 	font-size: 14px;
 }
+
 .label-checkbox {
 	display: inline-block;
 	margin-left: 6px;

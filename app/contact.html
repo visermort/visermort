@@ -83,18 +83,22 @@
 			<div class="content-content ">
 				<form action="send-message" method="POST" class="form-message">
 					<div class="block-input block-input-name"> 
+					<div class="block-input_validate validate-name left">введите имя</div>
 						<span class="label-input">Имя</span>
-						<input type="text" class="send-message__input input-name placeholder" placeholder="Как в Вам орбащаться" title="Вы не ввели имя">
+						<input type="text" class="send-message__input input-name placeholder" placeholder="Как в Вам обращаться" title="Вы не ввели имя">
 					</div>
+					<div class="block-input_validate validate-email right">введите email</div>
 					<div class="block-input block-input-email"> 
 						<span class="label-input">Email</span>
 						<input type="text" class="send-message__input input-email placeholder" placeholder="Куда мне писать" title="Вы не ввели email">
 					</div>
+					<div class="block-input_validate validate-message left">ваш вопрос</div>
 					<div class="block-input-message block-message"> 
 						<span class="label-input">Сообщение</span>
 						<!-- <input type="text" class="input-message placeholder" placeholder="Кратко в чём суть"> -->
 						<textarea  cols="40" rows="6"  class="send-message__input input-message placeholder" placeholder="Кратко в чём суть" title="Что вы от меня хотите"></textarea>
 					</div>
+					<div class="block-input_validate validate-captcha right">код капчи</div>
 					<div class="block-captcha  clearfix">
 						<span class="label-input ">Введите код, указанный на картинке</span>
 						<img src="images/captcha.gif"  alt="captcha" class="image-captcha">
@@ -124,6 +128,28 @@
 	    </div>
 	</div>
 </footer>
+
+<div class="form-login">
+	<p class="form-register__label" >Авторизируйтесь</p>
+	<form action="" class="form-register">
+		<div class="form-register__icon icon-email-grey">
+			<input type="text" class="form-register__email register-input email-gray" placeholder="Введите Email" >
+		</div>
+		<div class="form-register__icon icon-password">
+			<input type="password" class="form-register__password register-input password" placeholder="Введите пароль">
+		</div>
+		<div class="form-register__icon icon-checkbox">
+				<input type="checkbox" id="form-register__checkbox" class="form-register__checkbox register-checkbox" name="register-checkbox" checked="true">
+	  			<div class="form_register__label-chechbox label-checkbox" >
+					Запомнить меня?
+				</div>
+		</div>
+		<input type="submit" class="form-register__submit register-submit" value="Войти">
+
+	</form>	
+</div>
+
+<!-- #9a4e32 12px OpenSansSemibold -->
 
 	<script type="text/javascript" src="bower/jquery/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"> </script>

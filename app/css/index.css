@@ -57,7 +57,18 @@
    display: inline-block;
    position: relative;
 }
-
+.skils-link {
+/*	display:block;
+*/	color: #1e7465;
+/*	background: url(../images/sprite-skills.png) repeat-x;
+	width: 2px;
+    height: 20px;
+	top: 4px;
+	left: 0;
+	position: absolute;
+	margin-left: -10px;
+    background-position: -20px -5px;
+*/}
 .skills:before{
 	content: " ";
 	background: url(../images/sprite-skills.png) no-repeat;

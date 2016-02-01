@@ -5,6 +5,7 @@
 	font-family: OpenSansRegular;
 	margin-left: 82px;
 	margin-top: -9px;
+	position: relative;
 }
 .block-input {
 	 width: 190px;
@@ -187,4 +188,21 @@
 .qtip-customclass {
 	border-color: red;
 	font-size: 13px;
+}
+/*позиции туултипов*/
+.validate-name {
+    top: 32px;
+    left: -100px;
+}
+.validate-email {
+    top: 32px;
+    right: -80px;
+}
+.validate-message {
+    top: 200px;
+    left: -100px;
+}
+.validate-captcha {
+    top: 300px;
+    right: -80px;
 }

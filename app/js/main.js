@@ -4,6 +4,8 @@ var application = (function (){
            $('.send-message__input').on('keyup',checkElementTyped); //проверка заполнения полей ввода
            $('.login-area').on('click',doLogin);           //переход на форму логин
            $('.register-submit').on('click',doRegister); //нажатие submit - форма логин
+           $('.page-add-link').on('click',doAddProgect);//нажатие - добавление проекта
+           $('.page-add-project__close-button').on('click',cancelOtherForm);//нажате формы закрытия окна добавления проекта
 
           document.addEventListener('keydown',handleKeyDown);//отслеживание нажатии клавиши
 
@@ -11,11 +13,9 @@ var application = (function (){
      
        //нажатие клавиши на форме     
       var handleKeyDown = function(event) {
-      //  console.log(event);
           var keyCode = event.keyCode;
           if (keyCode===27) {  
-        //  alert('закрываеа логин')
-          cancelLogin(); 
+          cancelOtherForm(); 
           }; //если escape то закрываем форму логин
       };
         //регистрация      
@@ -25,7 +25,7 @@ var application = (function (){
         cancelLogin();
       };
 
-     // нажатие submit
+     // нажатие submit на форме отправки сообщения
       var checkElementsEmpty = function(e){
       	e.preventDefault();  //отменяем стандартные отработки
       	var form = $(this),
@@ -75,24 +75,27 @@ var application = (function (){
       	 };
         
         //форма логин
-      	 var doLogin = function(){
-      //	 	alert('login');
-      //	 	$('#form-register').bPopup({
-     // 	 		 modalClose: true
+      	 var doLogin = function(e){
+         e.preventDefault();  //отменяем стандартные отработки
          $('.wrapper').hide();
      //    $('.footer').hide();
          $('.form-login').show();
+       	 };
 
-      	// 	});//bpopup
-      	 };
-        //форма логин - закрытие
-         var cancelLogin = function(){
+        //форма логин и добавление проекта- закрытие
+         var cancelOtherForm = function(){
          $('.wrapper').show();
        //  $('.footer').show();
          $('.form-login').hide();
-        // alert('Закрываю логин')
+         $('.page-add-project').hide();
       };
 
+        //формо добавление проекта
+        var doAddProgect = function(e){
+        e.preventDefault();  //отменяем стандартные отработки
+        $('.wrapper').hide();
+        $('.page-add-project').show();
+        };//doAddProgect
 
 
 
@@ -107,4 +110,11 @@ $(document).ready(function(){
 		application.init();
 });
 
-
+// //Катин код
+//     $('#project-file').change(function() {   //input
+//         var t = $(this).val();
+//         if (t.indexOf('C:\\fakepath\\') + 1) {
+//             t = t.substr(12) };
+//         var e = $(this).siblings('.project-upload-input'); //label
+//         e.html(t);
+//     });
