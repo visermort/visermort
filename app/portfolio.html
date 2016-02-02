@@ -220,73 +220,30 @@
 		<a href="#" class="page-add-project__close-button">Закрыть</a>
 	
 			<div class="form-add-project__item close-button">
+ 				<div class="block-addproject_validate validate-project-name">введите название</div>
 				<p class="form-add-project__label">Название проекта</p>
 				<input type="text" class="form-add-project__text project-name" placeholder="Введите название">
 			</div>
 			<div class="form-add-project__item">
+				<div class="block-addproject_validate validate-image">изображение</div>
 				<p class="form-add-project__label">Картинка проекта</p>
-				  <label for="form-add-project__image" class="form-add-project__text add-project-image">Загрузите изображение	
+				  <label for="form-add-project__image" class="form-add-project__text add-project-image">Загрузите изображение
 				 <input type="file"  id="form-add-project__image" class="form-add-project__image-file" placeholder="Загрузите изображение"> 
-				  </label> 
+				  </label>
 			</div>
 			<div class="form-add-project__item">
+				<div class="block-addproject_validate validate-url">ссылка на проект</div>
 				<p class="form-add-project__label">URL проекта</p>
 				<input type="text" class="form-add-project__text project-url" placeholder="Добавьте ссылку">
 			</div>
 			<div class="form-add-project__item">
+				<div class="block-addproject_validate validate-decription">описание проекта</div>
 				<p class="form-add-project__label">Описание</p>
 				<textarea  cols="40" rows="6" class="form-add-project__text project-description" placeholder="Пара слов о вашем проекте"></textarea>
 			</div>
 			<div class="form-add-project__item">
 				<input type="submit" class="form-add-project__button project-add-submit" value="Добавить">
 			</div>
-
-
-<!-- 
-			<label class="label-unload-file" for="unload-file">
-					<span class="unload_paht_file">Загрузите изображение</span>
-					<span class="label-unload-file-img">icon-unload-file</span>	
-					<input class="unload-file" id="unload-file" type="file" name="project-image">
-				</label>	
-
-.form {
-  position: relative;
-}
-.label-unload-file {
-	width: 100%;
-    font-size: 13px;
-    padding: 10px 10px 8px 10px;    
-    border: 1px solid #48cbe8;
-    border-radius: 4px;
-    color: #48cbe8;
-    margin-bottom: 15px;
-	outline: none;	
-	background-color: #FFF;
-	display: block;	
-	position: relative;
-}
-.label-unload-file-img {
-	position: absolute;
-	top:0;
-	right: 0;
-	float: right;
-	font-size: 0;
-	display: block;
-	width: 50px;
-	height: 39px;
-	background: #48cbe8 url("../img/upload.png") center center no-repeat;    	
-	cursor: pointer;
-}
-
-.unload-file {
-	position: absolute;
-	left:0;
-	z-index: -1;
-}
-
- -->
-
-
 
 	</form>
 </div>

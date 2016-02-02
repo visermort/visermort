@@ -7,7 +7,7 @@ var application = (function (){
            $('.page-add-link').on('click',doAddProgect);//нажатие - добавление проекта
            $('.page-add-project__close-button').on('click',cancelOtherForm);//нажате формы закрытия окна добавления проекта
 
-          document.addEventListener('keydown',handleKeyDown);//отслеживание нажатии клавиши
+         document.addEventListener('keydown',handleKeyDown);//отслеживание нажатии клавиши
 
       };//setEvents
      

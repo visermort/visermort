@@ -1,10 +1,17 @@
+.content-header {
+	font-family: OpenSansRegular;
+	padding-top: 6px;
+	padding-bottom: 15px;
+}
+
 .form-message {
 	width: 430px;
 	color: #727070;
 	font-size: 14px;
 	font-family: OpenSansRegular;
-	margin-left: 82px;
+/*	margin-left: 82px;
 	margin-top: -9px;
+*/	margin: -9px 0 0 82px;
 	position: relative;
 }
 .block-input {
@@ -13,8 +20,11 @@
 }
 
 .block-input-message, .block-captcha {
-    width: 403px;
+    width: 405px;
 	margin-top: 14px;
+}
+.block-captcha {
+	margin: 8px 0 0 0;
 }
 .label-input {
 	display: block;
@@ -27,8 +37,8 @@
 	font-size: 12px;
 }
 .input-name, .input-email, .input-captcha{
-	width: 192px;
-	height: 41px;
+	width: 195px;
+	height: 45px;
 	-webkit-border-radius: 2px/4px;
 	-moz-border-radius: 2px/4px;
 	border-radius: 2px/4px;
@@ -51,8 +61,8 @@
 
 .input-message {
 	resize: none;
-	width: 400px;
-	height: 180px;
+	width: 405px;
+	height: 183px;
 	padding: 12px 9px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -78,69 +88,20 @@
 	display:inline-block;
 }
 .input-captcha {
-	margin: 20px 0 0 14px;
-	height: 28px;
+	margin: 20px 0 0 18px;
+	height: 35px;
 }
 
 .form-message-buttons {
-	margin : 28px 0 10px 30px;
+	margin : 30px 0 10px 30px;
 }
 .button-reset {
 	margin-left: 96px;
 }
-
-.button-submit {
-	width: 121px;
-	height: 37px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #72ddbf;/* #fbf9f9;*/
-	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-	box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-	border: solid 1px  #c3c2c2;	
-	background-image: -webkit-linear-gradient(bottom, #43b796, #80e8cb);
-	background-image: -moz-linear-gradient(bottom, #43b796, #80e8cb);
-	background-image: -o-linear-gradient(bottom, #43b796, #80e8cb);
-	background-image: -ms-linear-gradient(bottom, #43b796, #80e8cb);
-	background-image: linear-gradient(to top, #43b796, #80e8cb);
+.block-input, .block-input-message, .block-captcha {
+	position: relative;
 }
 
-.button-submit:hover , .button-reset:hover
-{
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #4ec1a5;/*#fbf9f9;*/
-	-webkit-box-shadow: inset 0 1px rgba(255,255,255,.3);
-	-moz-box-shadow: inset 0 1px rgba(255,255,255,.3);
-	box-shadow: inset 0 1px rgba(255,255,255,.3);
-	border: solid 1px #c3c2c2;
-	background-image: -webkit-linear-gradient(bottom, #3aa087, #5fdcbd);
-	background-image: -moz-linear-gradient(bottom, #3aa087, #5fdcbd);
-	background-image: -o-linear-gradient(bottom, #3aa087, #5fdcbd);
-	background-image: -ms-linear-gradient(bottom, #3aa087, #5fdcbd);
-	background-image: linear-gradient(to top, #3aa087, #5fdcbd);
-}
-.button-reset
-{
-	width: 121px;
-	height: 37px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #fbf9f9;
-	-webkit-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
-	-moz-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
-	box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
-	border: solid 1px #c3c2c2;
-	background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
-	background-image: -moz-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
-	background-image: -o-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
-	background-image: -ms-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
-	background-image: linear-gradient(to top, #e9e6e4, #fbf9f9 94%, #fff);
-}
 
 
 /*главное меню - раздельные части страниц
@@ -185,24 +146,20 @@
 	background-image: linear-gradient(to top, rgba(233,231,231,.45), rgba(251,249,249,0));}
 
 
-.qtip-customclass {
-	border-color: red;
-	font-size: 13px;
-}
 /*позиции туултипов*/
 .validate-name {
-    top: 32px;
-    left: -100px;
+    top: 34px;
+    left: -103px;
 }
 .validate-email {
-    top: 32px;
-    right: -80px;
+    top: 34px;
+    right: -116px;
 }
 .validate-message {
-    top: 200px;
-    left: -100px;
+    top: 102px;
+    left: -96px;
 }
 .validate-captcha {
-    top: 300px;
-    right: -80px;
+    top: 49px;
+    right: -87px;
 }
