@@ -1,0 +1,19 @@
+{
+    "name": "vendor/name",
+    "authors": [
+        {
+            "name": "visermort",
+            "email": "oxygenn@list.ru"
+        }
+    ],
+    "require": {
+	"phpmailer/phpmailer": "~5.2",
+        "vlucas/valitron": "~1.2.4",
+        "smarty/smarty": "~3.1"
+
+
+    },
+     "config":{
+	"vendor-dir":"app/lib"
+}	
+}

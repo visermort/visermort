@@ -4,29 +4,6 @@
     display: block;
 }
 
-.sprite-Rounded-Rectangle-4 {
-    width: 104px;
-    height: 32px;
-    background-position: -5px -5px;
-}
-
-.sprite-Rounded-Rectangle-41 {
-    width: 98px;
-    height: 32px;
-    background-position: -119px -5px;
-}
-
-.sprite-Rounded-Rectangle-42 {
-    width: 112px;
-    height: 32px;
-    background-position: -5px -47px;
-}
-
-.sprite-Rounded-Rectangle-43 {
-    width: 88px;
-    height: 32px;
-    background-position: -127px -47px;
-}
 
 .sprite-arrow {
     width: 10px;
@@ -41,7 +18,7 @@
 }
 
 
-.sprite-button-back0 {
+/*.sprite-button-back0 {
     width: 43px;
     height: 25px;
     background-position: -69px -100px;
@@ -69,7 +46,7 @@
     width: 81px;
     height: 25px;
     background-position: -151px -135px;
-}
+}*/
 
 .sprite-checkmark {
     width: 10px;
@@ -111,13 +88,28 @@
     background-position: -202px -224px;
 }
 
-
-.contact-item-link:after {
+.contact-item-link:after,
+.email:before,
+.skype:before,
+.phone:before,
+.job-item:after,
+.study-item:after,
+.icon-email-grey:before,
+.icon-password:before,
+.icon-email-grey:after,
+.icon-password:after  {
     content: '';
     position: absolute;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
-    top: 0px;
+}
+
+.contact-item-link:after {
+/*    content: '';
+    position: absolute;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+*/    top: 0px;
     left: 48px; 
     width: 10px;
     height: 35px;
@@ -125,11 +117,11 @@
 }
 
 .email:before {
-    content: '';
+/*    content: '';
     position: absolute;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
-    top: 13px;
+*/    top: 13px;
     left: 17px; 
     width: 17px;
     height: 13px;
@@ -137,11 +129,11 @@
 }
 
 .skype:before {
-    content: '';
+ /*   content: '';
     position: absolute;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
-    top: 11px;
+*/    top: 11px;
     left: 17px; 
     width: 20px;
     height: 20px;
@@ -149,11 +141,11 @@
 }
 
 .phone:before {
-    content: '';
+/*    content: '';
     position: absolute;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
-    top: 11px;
+*/    top: 11px;
     left: 17px; 
     width: 17px;
     height: 22px;
@@ -193,8 +185,8 @@
     background-position: -173px -224px;
 }
 .login:hover {
-    position: absolute;
-    background-image: url(../images/spritesheet.png);
+/*    position: absolute;
+*/    background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
     top: 21px;
     left: 169px; 
@@ -203,12 +195,13 @@
     background-position: -277px -210px;
 }
 
+
 .job-item:after {
-    content: " ";
+/*    content: " ";
     position: absolute;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
-    top:15px;
+*/    top:15px;
     left:0;   
     width: 54px;
     height: 55px;
@@ -216,11 +209,11 @@
 }
 
 .study-item:after {
-   content: " ";
+/*   content: " ";
     position: absolute;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
-    top:15px;
+*/    top:15px;
     left:0;   
     width: 54px;
     height: 55px;
@@ -236,39 +229,15 @@
 .loftschool:after {
     background-position: -109px -170px;
 }
-.register-submit, .project-add-submit {
-    height: 37px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #727070;
-    -webkit-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-    -moz-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-    box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-    border: solid 1px #c3c2c2;
-    background-image: -webkit-linear-gradient(bottom, #43b796, #80e8cb);
-    background-image: -moz-linear-gradient(bottom, #43b796, #80e8cb);
-    background-image: -o-linear-gradient(bottom, #43b796, #80e8cb);
-    background-image: -ms-linear-gradient(bottom, #43b796, #80e8cb);
-    background-image: linear-gradient(to top, #43b796, #80e8cb);
-}
 
-.register-submit {
-    width: 150px;
-}
-.project-add-submit {
-    width: 125px;
-}
-
-
-.icon-email-grey:before, .icon-password:before,
+/*.icon-email-grey:before, .icon-password:before,
 .icon-email-grey:after, .icon-password:after {
     content: " ";
     position: absolute;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
  }   
-
+*/
 .icon-email-grey:before, .icon-password:before {
     top: 14px;
     left: 17px; 
@@ -315,7 +284,7 @@
     display: block;
 }
 
-.sprite-tultip-arrow_leftt {
+/*.sprite-tultip-arrow_leftt {
     width: 13px;
     height: 29px;
     background-position: -5px -5px;
@@ -344,12 +313,14 @@
     height: 29px;
     background-position: -67px -5px;
 }
+*/
 
-
-.block-input_validate,
+/*.block-input_validate,
 .block-addproject_validate {
-   /* display:none;
-   */ box-sizing: border-box;
+*/ 
+.tooltip{
+    display:none;
+    box-sizing: border-box;
     color: #9a4e32;
     font-family: OpenSansSemibold;
     text-align: center;
@@ -371,8 +342,10 @@
 }
 
 
-.block-input_validate:after, 
+/*.block-input_validate:after, 
 .block-addproject_validate:after {
+*/
+.tooltip:after {
     content: " ";
     display: block;
     position: absolute;
@@ -380,7 +353,9 @@
     background-repeat: no-repeat;
 }
 
-.block-input_validate.right:after {
+/*.block-input_validate.right:after {
+*/ 
+.tooltip.right:after{ 
     width: 7px;
     height: 12px;
     background-position: -5px -5px;
@@ -388,8 +363,10 @@
     left: -7px;
 }
 
-.block-input_validate.left:after,
+/*.block-input_validate.left:after,
 .block-addproject_validate:after {
+*/
+.tooltip.left:after{
     width: 7px;
     height: 12px;
     background-position: -22px -5px;
@@ -397,27 +374,43 @@
     right: -7px;
 }
 
-
-.button-submit {
-    width: 121px;
-    height: 40px;
+/*Основные кнопки */
+.button-submit,
+.register-submit,
+.project-add-submit {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background-color: #72ddbf;/* #fbf9f9;*/
+    background-color: #72ddbf;
     -webkit-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
     -moz-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
     box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
-    border: solid 1px  #c3c2c2; 
+    border: solid 1px #c3c2c2;
     background-image: -webkit-linear-gradient(bottom, #43b796, #80e8cb);
     background-image: -moz-linear-gradient(bottom, #43b796, #80e8cb);
     background-image: -o-linear-gradient(bottom, #43b796, #80e8cb);
     background-image: -ms-linear-gradient(bottom, #43b796, #80e8cb);
     background-image: linear-gradient(to top, #43b796, #80e8cb);
 }
-
-.button-submit:hover , .button-reset:hover
-{
+.button-reset {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fbf9f9;
+    -webkit-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
+    -moz-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
+    box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
+    border: solid 1px #c3c2c2;
+    background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -moz-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -o-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: -ms-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
+    background-image: linear-gradient(to top, #e9e6e4, #fbf9f9 94%, #fff);
+}
+.button-submit:hover,
+.button-reset:hover,
+.project-add-submit:hover,
+.register-submit:hover {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -432,21 +425,24 @@
     background-image: -ms-linear-gradient(bottom, #3aa087, #5fdcbd);
     background-image: linear-gradient(to top, #3aa087, #5fdcbd);
 }
-.button-reset
-{
+
+
+.button-reset {
     width: 125px;
     height: 40px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #fbf9f9;
-    -webkit-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
-    -moz-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
-    box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
-    border: solid 1px #c3c2c2;
-    background-image: -webkit-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
-    background-image: -moz-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
-    background-image: -o-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
-    background-image: -ms-linear-gradient(bottom, #e9e6e4, #fbf9f9 94%, #fff);
-    background-image: linear-gradient(to top, #e9e6e4, #fbf9f9 94%, #fff);
+}
+
+.button-submit {
+    width: 121px;
+    height: 40px;
+}
+
+.register-submit, .project-add-submit {
+    height: 37px;
+}
+.register-submit {
+    width: 150px;
+}
+.project-add-submit {
+    width: 125px;
 }

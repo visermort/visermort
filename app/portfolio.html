@@ -198,13 +198,13 @@
 	<p class="form-register__label" >Авторизируйтесь</p>
 	<form action="" class="form-register">
 		<div class="form-register__icon icon-email-grey">
-			<input type="text" class="form-register__email register-input email-gray" placeholder="Введите Email" >
+			<input name="login"  type="text" class="form-register__email register-input email-gray" placeholder="Введите Email" >
 		</div>
 		<div class="form-register__icon icon-password">
-			<input type="password" class="form-register__password register-input password" placeholder="Введите пароль">
+			<input name="password"  type="password" class="form-register__password register-input password" placeholder="Введите пароль">
 		</div>
 		<div class="form-register__icon icon-checkbox">
-				<input type="checkbox" id="form-register__checkbox" class="form-register__checkbox register-checkbox" name="register-checkbox" checked="true">
+				<input name="rememberme"  type="checkbox" id="form-register__checkbox" class="form-register__checkbox register-checkbox" name="register-checkbox" checked="true">
 	  			<div class="form_register__label-chechbox label-checkbox" >
 					Запомнить меня?
 				</div>
@@ -216,30 +216,30 @@
 
 <div class="page-add-project">
 	<p class="pade-add-project__label" >Добавление проекта</p>
-	<form action="" class="form-add-project">
+	<form id="form_add_project" action="" class="form-add-project" enctype="multipart/form-data" >
 		<a href="#" class="page-add-project__close-button">Закрыть</a>
 	
 			<div class="form-add-project__item close-button">
- 				<div class="block-addproject_validate validate-project-name">введите название</div>
+ 				<div class="block-addproject_validate tooltip validate-project-name left">введите название</div>
 				<p class="form-add-project__label">Название проекта</p>
-				<input type="text" class="form-add-project__text project-name" placeholder="Введите название">
+				<input name="name" type="text" class="form-add-project__text project-name validate" placeholder="Введите название">
 			</div>
 			<div class="form-add-project__item">
-				<div class="block-addproject_validate validate-image">изображение</div>
-				<p class="form-add-project__label">Картинка проекта</p>
-				  <label for="form-add-project__image" class="form-add-project__text add-project-image">Загрузите изображение
-				 <input type="file"  id="form-add-project__image" class="form-add-project__image-file" placeholder="Загрузите изображение"> 
-				  </label>
+				<div class="block-addproject_validate tooltip validate-image left">изображение</div>
+				 <p class="form-add-project__label">Картинка проекта</p>
+				 <label for="form-add-project__image" class="form-add-project__text add-project-image">Загрузите изображение</label>
+				 <input type="file" name="image" id="form-add-project__image" class="form-add-project__image-file validate" placeholder="Загрузите изображение" accept="image/jpeg,image/png" > 
+				  
 			</div>
 			<div class="form-add-project__item">
-				<div class="block-addproject_validate validate-url">ссылка на проект</div>
+				<div class="block-addproject_validate tooltip validate-url left">ссылка на проект</div>
 				<p class="form-add-project__label">URL проекта</p>
-				<input type="text" class="form-add-project__text project-url" placeholder="Добавьте ссылку">
+				<input type="text" name="url" class="form-add-project__text project-url validate" placeholder="Добавьте ссылку">
 			</div>
 			<div class="form-add-project__item">
-				<div class="block-addproject_validate validate-decription">описание проекта</div>
+				<div class="block-addproject_validate tooltip validate-decription left">описание проекта</div>
 				<p class="form-add-project__label">Описание</p>
-				<textarea  cols="40" rows="6" class="form-add-project__text project-description" placeholder="Пара слов о вашем проекте"></textarea>
+				<textarea  name="description" cols="40" rows="6" class="form-add-project__text project-description validate" placeholder="Пара слов о вашем проекте"></textarea>
 			</div>
 			<div class="form-add-project__item">
 				<input type="submit" class="form-add-project__button project-add-submit" value="Добавить">
@@ -251,7 +251,6 @@
 
 
 	<script type="text/javascript" src="bower/jquery/jquery.js"></script>
-	<script type="text/javascript" src="bower/bPopup/jquery.bpopup.js"></script>
     <script type="text/javascript" src="js/main.js"> </script>
 </body>
 </html>

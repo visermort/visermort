@@ -222,13 +222,13 @@
 	<p class="form-register__label" >Авторизируйтесь</p>
 	<form action="" class="form-register">
 		<div class="form-register__icon icon-email-grey">
-			<input type="text" class="form-register__email register-input email-gray" placeholder="Введите Email" >
+			<input name="login"  type="text" class="form-register__email register-input email-gray" placeholder="Введите Email" >
 		</div>
 		<div class="form-register__icon icon-password">
-			<input type="password" class="form-register__password register-input password" placeholder="Введите пароль">
+			<input name="password"  type="password" class="form-register__password register-input password" placeholder="Введите пароль">
 		</div>
 		<div class="form-register__icon icon-checkbox">
-				<input type="checkbox" id="form-register__checkbox" class="form-register__checkbox register-checkbox" name="register-checkbox" checked="true">
+				<input name="rememberme"  type="checkbox" id="form-register__checkbox" class="form-register__checkbox register-checkbox" checked="true">
 	  			<div class="form_register__label-chechbox label-checkbox" >
 					Запомнить меня?
 				</div>
@@ -242,7 +242,6 @@
 </div>
 
 	<script type="text/javascript" src="bower/jquery/jquery.js"></script>
-	<script type="text/javascript" src="bower/bPopup/jquery.bpopup.js"></script>
     <script type="text/javascript" src="js/main.js"> </script>
 </body>
 </html>

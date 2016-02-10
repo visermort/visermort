@@ -9,3 +9,6 @@
 4. npm i
 
 5. gulp
+
+6. composer install
+
