@@ -1,11 +1,5 @@
 <?php 
 
-
-//function checkLogin($write){ //проверка, зарегистрирован пользватель или нет write - имеются ли права на запись в базу.
-//	return true;
-//}
-
-
 function sendEmail($name,$email,$subject,$body) {
 		//непосредственно почта
 		$mail = new PHPMailer;
@@ -59,10 +53,7 @@ function captchaCheck($request) {
 		));
 		$response = curl_exec($myCurl);
 		curl_close($myCurl);
-	//	echo "Ответ на Ваш запрос: ".$response;
-
    $googleresponse = json_decode($response,true);
-
 // Ответ в формате jsomThe response is a JSON object:
 // {
 //   "success": true|false,
@@ -77,6 +68,51 @@ function createMessageJson($mess) {
     return json_encode($res);
 }
 
+ //проверка регистрации, если хорошо, то вернёт хэш, иначе 0
+function checkPassword2($login,$password) {
+	try{
+		$hash=0;//это неверный результат
+		$database = new PDO('mysql:host='.dbhost.';dbname='.dbname, dblogin,dbpassword); //подключение к базе
+		$qres = $database-> prepare('SELECT * FROM `users`  where `email`=:name');
+		$qres -> bindValue(':name',$login ,PDO::PARAM_STR);
+		$qres -> execute();
+		if ($row = $qres -> fetch()) {
+			if (password_verify( $password ,$row['password'])) {
+	    //хэш создан  password_hash("password", PASSWORD_DEFAULT)
+				$hash = $row['password'];
+			}
+		}
+	} catch (PDOException $e) {			//ошибка,
+		$hash=0;//это неверный результат
+//		$res = "Error!: " . $e->getMessage();
+	}
+	return $hash;
+}
+//передаём хэш из сессии и название группы - возвращаем 0 или сообщение, если ошибка
+function checkGroup($hash,$group){
+	try {
+		$database = new PDO('mysql:host='.dbhost.';dbname='.dbname, dblogin,dbpassword); //подключение к базе
+		$qres = $database-> prepare('SELECT id_group FROM `users`  where `password`=:password');
+		$qres -> bindValue(':password',$hash ,PDO::PARAM_STR);
+		$qres -> execute();
+		if ($row = $qres -> fetch()) {
+			$id_group=$row['id_group'];
+			$qres->closeCursor();
+			$qres = $database -> prepare('SELECT * from `groups` where id=:id_group and name=:name');
+			$qres->bindValue(':id_group', $id_group,PDO::PARAM_INT);
+			$qres->bindValue(':name',$group,PDO::PARAM_STR);
+			$qres -> execute();
+			if ($res  = $qres-> fetch()) {
+				$res=0;
+			}else $res = "Пользователь не входит в группу ".$group;
+		}else $res='Ошибка - нет такого пользователя';
+	} catch (PDOException $e) {			//ошибка,
+		$res = "Error!: " . $e->getMessage();
+	}
+	return $res;
+}
+
+
 
 
    //проверяем логин и пароль пользователя, если $admin - то принадлежность к группе администраторов
@@ -90,7 +126,7 @@ function checkPassword($login,$password,$admin){
 		$qres -> execute();
 		if ($row = $qres -> fetch()) {
 			if (password_verify( $password ,$row['password'])) {
-				if (true) {  //если $admin то надо убедиться, что пользователь в группе администраторов
+				if ($admin) {  //если $admin то надо убедиться, что пользователь в группе администраторов
 					$group=$row['id_group'];
 					$qres->closeCursor();
 					$qres = $database -> prepare('SELECT * from `groups` where id=:group and name=:admins');
@@ -107,7 +143,7 @@ function checkPassword($login,$password,$admin){
 		$database -> NULL;
 	} catch (PDOException $e) {			//ошибка,
 		$res = "Error!: " . $e->getMessage();
-		echo $res;
+		//echo $res;
 	}
 	return $res;
 }

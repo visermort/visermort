@@ -19,14 +19,12 @@ $login = $_POST['login'];
 $password = $_POST['password'];
 $rememberme = $_POST['rememberme'];
 
-$res = checkPassword($login,$password,false);//на админа не проверяем в этот раз
-if ($res) { //>0 - проверка не прошла
-    exit(createMessageJson('Регистрация не выполнена!'.$res ));
+$hash = checkPassword2($login,$password);//проверка регистрации, если прошло, то из базы возращается хэш
+if (!hash) { //=0 - проверка не прошла
+    exit(createMessageJson('Регистрация не выполнена!'));
 }
-
 session_start();
-$_SESSION['login'] = $login;
-$_SESSION['password'] = $password;
+$_SESSION['password_hash'] = $hash;   //в сессию пишем хэш
 
 exit(createMessageJson('Регистраци выполнена'));
 

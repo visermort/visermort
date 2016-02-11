@@ -2,3 +2,5 @@ node_modules
 app/bower
 app/lib
 .idea
+app/php/phpinfo.php
+

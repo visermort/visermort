@@ -1,38 +1,22 @@
 <?php
 include_once 'phpsettings.php';
 
+session_start();
+//$_SESSION['login'] = 'Некоторый логин';
+echo  "здесь должен быть логин и пароль".$_SESSION['login'].'  '.$_SESSION['password'].'<br>';
 
-try {
-$sql ='SELECT * FROM users where `name`="vs"';
-$res = 0;//это верный результат
-$database = new PDO('mysql:host='.dbhost.';dbname='.dbname, dblogin,dbpassword); //подключение к базе
-$qres = $database-> prepare('SELECT * FROM `users`  where `name`=:name');
-$qres -> bindValue(':name','vs' ,PDO::PARAM_STR);
-$qres -> execute();
-if ($row = $qres -> fetch()) {
-        $count=1;
-        $hash = $row['password'];
-        if (password_verify('111',$row['password'])) {
-            if (true) {  //если $admin то надо убедиться, что пользователь в группе администраторов
-					$group=$row['id_group'];
-					$qres->closeCursor();
-                    $qres = $database -> prepare('SELECT * from `groups` where id=:group and name=:admins');
-                    $qres->bindValue(':group', $group,PDO::PARAM_INT);
-					$qres->bindValue(':admins','Администраторы',PDO::PARAM_STR);
-					$qres -> execute();
-                    if ($res  = $qres-> fetch()) {
- 						$res=0;
-					}else $res = "У пользователя нет прав на запись в базу данных";
-				}
-               }else $res = "Неправильный пароль";
-        }else
-            $res = "Нет такого пользователя";
-		$database -> NULL;
-} catch (PDOException $e) {			//ошибка,
-    $res = "Error!: " . $e->getMessage();
-    echo $res;
-}
+if (!isset($_SESSION['counter'])) $_SESSION['counter']=0;
+echo "Вы обновили эту страницу ".$_SESSION['counter']++." раз. ";
+//echo "<br><a href=".$_SERVER['PHP_SELF'].">обновить";
+print_r($_SESSION);
 
-echo "Полный результат ".$res;
+
+//$hash=checkPassword2('vs','111');
+//echo '<p> Ввводим логин VS пароль 111 , получаем из базы hash '.$hash.' </p>';
+//$res = checkGroup($hash,'Администраторы');
+//echo '<p> Полученный hash вставляем - делаем проверку, что пользователь в группе Администраторы, результат '.$res.' </p>';
+//$_SESSION['password_hash']=$hash;
+//echo '<p> Полученный hash пишем в сессию, и вот он уже в сессии '.$_SESSION['password_hash'].' </p>';
+
 
 

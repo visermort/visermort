@@ -10,6 +10,7 @@ var application = (function (){
            $('.form-register').on('submit',doRegister); //нажатие submit - форма логин
            $('.form-message').on('reset',clearValidate); //нажатие reset - на форме сообщение
            $('.validate').on('keyup',checkElementTyped); //нажатие на клавишу - проверка заполнения полей ввода
+       //    $('.g-recaptcha').on('click',inputCaptchaErrorOff);//нажатие на капчу - выключаем тултип
            $('.login-area').on('click',doLogin);           //переход на форму логин
            $('.page-add-link').on('click',doAddProgect);//нажатие - добавление проекта
            $('.page-add-project__close-button').on('click',cancelOtherForm);//нажате формы закрытия окна добавления проекта
@@ -17,21 +18,21 @@ var application = (function (){
            $(document).on('keydown',handleKeyDown);//отслеживание нажатии клавиши - в нашем слчае отслеживаем Escape для закрытия модальных окон
       };
 
-     //нажатие клавиши на форме     
+     //нажатие клавиши на форме
       var handleKeyDown = function(event) {
           var keyCode = event.keyCode;
-          if (keyCode===27) {  
-          cancelOtherForm(); 
+          if (keyCode===27) {
+          cancelOtherForm();
           } //если escape то закрываем форму логин
       };
 
 
-    //показ выполнения операций с сервером
-    var showResult = function(res) {
-        //буду сам парсить
-        console.log(res);
-        //  alert(mess['message']);
-    };
+        //показ выполнения операций с сервером
+        var showResult = function(res) {
+            //буду сам парсить
+            console.log(res);
+            //  alert(mess['message']);
+        };
 
         //регистрация      
       var doRegister = function(form) {
@@ -112,6 +113,10 @@ var application = (function (){
        // нажатие submit на форме отправки сообщения
       var submitFormMessage = function(e){
       	e.preventDefault();  //отменяем стандартные отработки
+        //получена ли рекапча, тоже будем проверять для этого ответ рекапчи перепишем в поле кода
+         var response = grecaptcha.getResponse();
+         $(this).find('.input-captcha')[0].value = response;
+
         if (validateForm($(this),true)){
           //валидация прошла  - отправляем письмо
           //if(checkCaptcha($(this))) {
@@ -125,9 +130,23 @@ var application = (function (){
        var submitFormAddPorject = function (form){
           form.preventDefault();  //отменяем стандартные отработки
           if (validateForm($(this),true)){
-              addProject($(this));
-            } else{  return false;}
-           
+              var formData = new FormData($('form')[1]);
+              console.log('Начинаем отправку');
+                  console.log(formData);
+              $.ajax({
+                  type: "POST",
+                  processData: false,
+                  contentType: false,
+                  url: "php/addproject.php",
+                  data: formData
+              }).done(function(ans){
+                  // console.log("Данные успешно отправлены на сервер!");
+                  console.log(ans);
+              }).fail(function(ans){
+                  // console.log("Ошибка при отправке данных!");
+                  console.log(ans);
+              });
+              } else{  return false;}
        };
 
        //ввод текста в поле ввода
@@ -140,6 +159,14 @@ var application = (function (){
             showError($(this),false);
      	 	 }
       	 };
+
+         //   //при клике на капчу находим инпут ввода капчи, уничтожаем его текст и запустм проверку
+         //var inputCaptchaErrorOff = function() {
+         //    console.log('клик на капчу')
+         //    var input=$(document).find('.input-captcha');
+         //    input[0].value = '';
+         //    showError(input[0],false);
+         //}
 
           //отпрaвка данных на сервер через Ajax
         var sendAjax = function (url,data,onDone,onFail) {
@@ -162,37 +189,6 @@ var application = (function (){
                   showResult(ans);
             });
           };//sendmail
- 
-          //добавление проекта
-          var addProject = function (){
-               var myform = $('#form_add_project');
-              // myform = form_add_project;
-               console.log(myform);
-               var fdata = new FormData(myform);
-               
-               // fdata.append('name', myform.find('.project-name').val());
-               // fdata.append('url', myform.find('.project-url').val());
-               // fdata.append('description', myform.find('.project-description').val());
-               // fdata.append('image', myform.find('.form-add-project__image-file').get(0).files[0]);
-               // // data.append('name','namename');
-               // // data.append('url','urlurl');
-               // data.append('image','imageimage');
-               // data.append('description','descriptiondescription');
-               console.log(fdata);
-                $.ajax({
-                    type: "POST",
-                    processData: false,
-                    contentTypt: false,
-                    url: "php/addproject.php",
-                    data: fdata
-                  }).done(function(ans){
-                     console.log("Данные успешно отправлены на сервер!");
-                     console.log(ans);
-                   }).fail(function(ans){
-                    console.log("Ошибка при отправке данных!");
-                    console.log(ans);
-                  });
-            };//addProject_
 
         //форма логин
       	 var doLogin = function(e){

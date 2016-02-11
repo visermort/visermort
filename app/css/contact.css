@@ -90,6 +90,7 @@
 .input-captcha {
 	margin: 20px 0 0 18px;
 	height: 35px;
+	display: none;
 }
 
 .form-message-buttons {
@@ -161,5 +162,5 @@
 }
 .validate-captcha {
     top: 49px;
-    right: -87px;
+    left: -98px;
 }

@@ -1,8 +1,6 @@
 <?php
 include_once 'phpsettings.php';  
 
-
-
 header("content-type: application/json");
 if (!isset($_POST)) {
 	exit(createMessageJson('Нет входных данных'));
@@ -19,7 +17,7 @@ $v->rule('email', 'email');
 if(!$v->validate()) {
   exit (createMessageJson('Неверные введённые данные'));
 }
-
+//echo( $_post );
 $body ='';
 //foreach($_POST as $key => $value){
 	$body .= '<p><strong>Name</strong>'.$_POST['name'].'</p>'; 

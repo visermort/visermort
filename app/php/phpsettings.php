@@ -1,6 +1,8 @@
 <?php 
 include_once '../lib/phpmailer/phpmailer/class.phpmailer.php';
 include_once '../lib/vlucas/valitron/src/Valitron/Validator.php';
+include_once 'abeautifulsite/SimpleImage.php';
+
 include_once 'function.php';
 
 define('const_admin_email','oxygenn@list.ru');
@@ -11,3 +13,4 @@ define('dbname','visermort');
 define('dblogin','root');
 define('dbpassword','');
 define('admins','Администраторы');//название группа администраторов
+define('uploads','/app/files/');//директория для файлов загрузки
