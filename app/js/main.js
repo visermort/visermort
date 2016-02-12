@@ -142,6 +142,7 @@ var application = (function (){
               }).done(function(ans){
                   // console.log("Данные успешно отправлены на сервер!");
                   console.log(ans);
+                  location.reload();//перезагрузить страницу, и увидим, что данные отправлены
               }).fail(function(ans){
                   // console.log("Ошибка при отправке данных!");
                   console.log(ans);

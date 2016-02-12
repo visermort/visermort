@@ -1,0 +1,25 @@
+# Кодировка
+AddDefaultCharset UTF-8
+
+# Закрываем файлы от просмотра
+IndexIgnore *.png *.php
+
+# Закрываем Директории
+SOptions -Indexes
+
+# Индексный файл
+DirectoryIndex no-index.php
+
+# 404 Страница
+ErrorDocument 404 /404.html
+
+# Отображение ошибок
+php_value display_errors 1
+
+# Memcached
+#php_value session.save_handler memcache
+#php_value session.save_path "tcp://127.0.0.1:11211"
+
+# не отображать расширения html
+#RewriteRule ^([^/.]+)/?$ $1.html
+

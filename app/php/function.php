@@ -148,6 +148,23 @@ function checkPassword($login,$password,$admin){
 	return $res;
 }
 
+//читаем проекты и пишим в массив
+function readProjects(){
+	try {
+		$resArray= [];
+		$database = new PDO('mysql:host='.dbhost.';dbname='.dbname, dblogin,dbpassword); //подключение к базе
+		$qres = $database-> prepare('SELECT * FROM `projects`');
+		$qres -> execute();
+		while ($row = $qres -> fetch()) {
+			$resArray[] = $row;
+		}
+		$database -> NULL;
+	} catch (PDOException $e) {			//ошибка,
+		$resArray = "Error!: " . $e->getMessage();
+	}
+	return $resArray;
+}
+
 
 
 

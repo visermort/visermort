@@ -1,4 +1,5 @@
 <?php
+include_once 'phpincluds.php';
 include_once 'phpsettings.php';
 
 
@@ -71,7 +72,7 @@ try{
 	$qres -> bindValue(':pname',$name ,PDO::PARAM_STR);
 	$qres -> bindValue(':url',$url ,PDO::PARAM_STR);
 	$qres -> bindValue(':description',$description ,PDO::PARAM_STR);
-	$qres -> bindValue(':image',$file_copy_dist,PDO::PARAM_STR);
+	$qres -> bindValue(':image',$filename_copy.'.'.$ftype,PDO::PARAM_STR);
 	$qres -> execute();
 	$database -> NULL;
 } catch (PDOException $e) {			//ошибка,
@@ -79,4 +80,4 @@ try{
 }
 
 
-exit ('Выполнен перенос данных в базу '. $res);
+exit (createMessageJson('Выполнен перенос данных в базу '. $res));

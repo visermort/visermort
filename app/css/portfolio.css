@@ -40,8 +40,9 @@
 	font-family: OpenSansLight;
 	text-align: center;
 	font-size: 12px;
-/*	padding: 9px;
-*/}
+	margin: 0;
+	padding: 8px;
+}
 
 	
 .page-add {

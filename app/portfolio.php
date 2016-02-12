@@ -19,9 +19,9 @@
 <div class="wrapper">
 	<header class="header ">
 		<div class="header-container  " >
-			<a href="index.html"  class="logo"  >
+			<a href="/"  class="logo"  >
 				<img src="images/logo-logaster-shadow-24.png"  alt="loftschool. От мыслителя к создателю" class="logo-image">
-				<span class="logo-text">loftschool. От мыслителя к создателю</span>
+				<span class="logo-text">От мыслителя к создателю</span>
 			</a>
 			
 			<ul class="socials ">
@@ -55,7 +55,7 @@
 				 <a href="index.html" class="menu-item-link about-link"> Обо мне</a>      
 				</li>
 				<li class="nav-item ">
-				 <a href="portfolio.html" class="menu-item-link portfolio-link">Мои работы</a>       				
+				 <a href="portfolio.php" class="menu-item-link portfolio-link">Мои работы</a>
 				</li>
 				<li class="nav-item ">
 				 <a href="contact.html" class="menu-item-link contact-link">Обратная связь</a>      
@@ -81,91 +81,8 @@
 		    <h1 class="content-header">Мои работы</h1>
 			<div class="content-content ">
 				<ul class="pages clearfix">
-					<li class="page">
-						<div class="projects-item">	
-							  <div class="hover-img">
-									<img src="images/page.jpg" height="120" alt="pagetitle" class="project-img">
-								    <div class="zoom-wrapper">
-								      <a href="#" target="_blank" class="zoom-link">Подробнее</a>
-								    </div>
-							</div>	 
-						</div>		 
-						 <h3 class="page-title">
-						 	a-industry.ru
-						 </h3>
-						 <p class="page-description">
-						 	Корпоративный, и в то же время продающий сайт строительной 
-						 	компании a-industry
-						 </p>
-					</li>
-					<li class="page">
-						<div class="projects-item">	
-							  <div class="hover-img">
-									<img src="images/page.jpg" height="120" alt="pagetitle" class="project-img">
-								    <div class="zoom-wrapper">
-								      <a href="#" target="_blank" class="zoom-link">Подробнее</a>
-								    </div>
-							</div>	 
-						</div>		 
-						 <h3 class="page-title">
-						 	a-industry.ru
-						 </h3>
-						 <p class="page-description">
-						 	Корпоративный, и в то же время продающий сайт строительной 
-						 	Корпоративный, и в то же время продающий сайт строительной 
-						 	компании a-industry
-						 </p>
-					</li>
-					<li class="page">
-						<div class="projects-item">	
-							  <div class="hover-img">
-									<img src="images/page.jpg" height="120" alt="pagetitle" class="project-img">
-								    <div class="zoom-wrapper">
-								      <a href="#" target="_blank" class="zoom-link">Подробнее</a>
-								    </div>
-							</div>	 
-						</div>		 
-						 <h3 class="page-title">
-						 	a-industry.ru
-						 </h3>
-						 <p class="page-description">
-						 	Корпоративный, и в то же время продающий сайт строительной 
-						 	компании a-industry
-						 </p>
-					</li>
-					<li class="page">
-						<div class="projects-item">	
-							  <div class="hover-img">
-									<img src="images/page.jpg" height="120" alt="pagetitle" class="project-img">
-								    <div class="zoom-wrapper">
-								      <a href="#" target="_blank" class="zoom-link">Подробнее</a>
-								    </div>
-							</div>	 
-						</div>		 
-						 <h3 class="page-title">
-						 	a-industry.ru
-						 </h3>
-						 <p class="page-description">
-						 	компании a-industry
-						 </p>
-					</li>
-					<li class="page">
-						<div class="projects-item">	
-							  <div class="hover-img">
-									<img src="images/page.jpg" height="120" alt="pagetitle" class="project-img">
-								    <div class="zoom-wrapper">
-								      <a href="#" target="_blank" class="zoom-link">Подробнее</a>
-								    </div>
-							</div>	 
-						</div>		 
-						 <h3 class="page-title">
-						 	a-industry.ru
-						 </h3>
-						 <p class="page-description">
-						 	Корпоративный, и в то же время продающий сайт строительной 
-						 	компании a-industry
-						 </p>
-					</li>
+
+					<?php include_once 'php/readproject.php';  ?>
 
 					<li class="page-add">
 						<a href="#" class="page-add-link">

@@ -1,5 +1,6 @@
 <?php
-include_once 'phpsettings.php';  
+include_once 'phpincluds.php';
+include_once 'phpsettings.php';
 
 header("content-type: application/json");
 if (!isset($_POST)) {
