@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru-RU">
+<link rel="stylesheet" href="../css/main.css">
+<!--<link rel="stylesheet" href="../css/index.css">-->
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="form-login">
+        <p class="form-register__label" >Авторизируйтесь</p>
+        <form action="../php/mail.php" class="form-register">
+            <div class="form-register__icon icon-email-grey">
+                <input name="login"  type="text" data-validation="text" class="form-register__email register-input email-gray validate" placeholder="Введите Email" >
+            </div>
+            <div class="form-register__icon icon-password">
+                <input name="email"  type="text" data-validation="email" class="form-register__password register-input password validate" placeholder="Введите пароль">
+            </div>
+            <div class="form-register__icon icon-checkbox">
+                <input name="rememberme"  type="checkbox" id="form-register__checkbox" class="form-register__checkbox register-checkbox " checked="true">
+                <div class="form_register__label-chechbox label-checkbox" >
+                    Запомнить меня?
+                </div>
+            </div>
+            <input type="submit" class="form-register__submit register-submit" value="Войти">
+        </form>
+    </div>
+    <div class="popup" id="success">
+        <div class="popup__inner">
+            <span class="popup__message">
+                Сообщение отправлено!
+            </span>
+        </div>
+    </div>
+    <div class="popup" id="error">
+        <div class="popup__inner">
+            <span class="popup__message">
+                Ошибка при отправке сообщения!
+            </span>
+        </div>
+    </div>
+    <script type="text/javascript" src="../bower/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"> </script>
+    <script type="text/javascript" src="../bower/bPopup/jquery.bpopup.js"></script>
+</body>
+</html>

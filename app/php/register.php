@@ -11,7 +11,7 @@ if (!isset($_POST)) {
 $v = new Valitron\Validator($_POST);
 $v->rule('required', ['login', 'password']);
 if(!$v->validate()) {
-  exit(createMessageJson('Не заполнены обязательные поля'));
+  exit(createMessageJson(false,'Не заполнены обязательные поля'));
 }
 
 //далее делаем регистрацию
@@ -22,10 +22,10 @@ $rememberme = $_POST['rememberme'];
 
 $hash = checkPassword2($login,$password);//проверка регистрации, если прошло, то из базы возращается хэш
 if (!hash) { //=0 - проверка не прошла
-    exit(createMessageJson('Регистрация не выполнена!'));
+    exit(createMessageJson(false,'Регистрация не выполнена!'));
 }
 session_start();
 $_SESSION['password_hash'] = $hash;   //в сессию пишем хэш
 
-exit(createMessageJson('Регистраци выполнена'));
+exit(createMessageJson(true,'Регистраци выполнена'));
 

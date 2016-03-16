@@ -31,6 +31,7 @@ var application = (function (){
         var showResult = function(res) {
             //буду сам парсить
             console.log(res);
+            popup.show(res.status,res.message);
             //  alert(mess['message']);
         };
 
@@ -227,3 +228,32 @@ $(document).ready(function(){
 		application.init();
 });
 
+var popup = function () {
+
+    showPopup = function(status,text) {
+        var popup = $('.popup'),
+            popupMess = $('.popup__text'),
+            popupText = '',
+            time=1000;
+        if (status) {
+            popup.removeClass('popup_error');
+            popupTest = test || 'Success';
+        }else {
+            popup.addClass('popup_error');
+            popupTest = test || 'Error';
+        }
+        popupMess.val(popupText);
+
+        popup.stop(true, true).fadeIn(time);
+
+            function popupHide() {
+                popup.stop(true, true).fadeOut(time);
+            }
+        setTimeout(poputHide, 5000);
+
+    };
+
+    return {
+        show: showPopup
+    }
+}();

@@ -9,9 +9,15 @@
     <![endif]-->
 	<title>Выпускной проект ученика LoftSchool</title>
 	<meta name="keywords" content="спартак портфолио ученик loftschool">
-	<link rel="stylesheet" href="css/normalize.css">
+	<!-- build:css css/vendor.css -->
+	<!-- bower:css-->
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css css/portfolio.css -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/portfolio.css">
+	<!-- endbuild -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body class="portfolio">
@@ -247,11 +253,18 @@
 
 	</form>
 </div>
-
-
-
-	<script type="text/javascript" src="bower/jquery/jquery.js"></script>
-	<!--<script type="text/javascript" src="bower/blueimp-file-upload/js/jquery.fileupload.js"></script>-->
+	<!-- build:js scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower/modernizr/modernizr.js"></script>
+	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/qtip2/basic/jquery.qtip.js"></script>
+	<!--endbower-->
+	<!-- endbuild -->
+	<!-- build:js scripts/main.js -->
     <script type="text/javascript" src="js/main.js"> </script>
+	<!-- endbuild -->
+
 </body>
 </html>

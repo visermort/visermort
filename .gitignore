@@ -3,4 +3,7 @@ app/bower
 app/lib
 .idea
 app/php/phpinfo.php
+dist
+arhives
+
 

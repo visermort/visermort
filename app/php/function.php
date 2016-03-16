@@ -63,8 +63,9 @@ function captchaCheck($request) {
 }
 
   //для возврата в JS сообщений - кодируем их в Json
-function createMessageJson($mess) {
-      $res['message'] = $mess;
+function createMessageJson($status,$mess) {
+	$res['status'] = $status;
+	$res['message'] = $mess;
     return json_encode($res);
 }
 
