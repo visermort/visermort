@@ -21,7 +21,7 @@ $password = $_POST['password'];
 $rememberme = $_POST['rememberme'];
 
 $hash = checkPassword2($login,$password);//проверка регистрации, если прошло, то из базы возращается хэш
-if (!hash) { //=0 - проверка не прошла
+if (!$hash) { //=0 - проверка не прошла
     exit(createMessageJson(false,'Регистрация не выполнена!'));
 }
 session_start();

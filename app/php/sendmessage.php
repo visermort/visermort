@@ -3,12 +3,10 @@ include_once 'phpincluds.php';
 include_once 'phpsettings.php';
 
 header("content-type: application/json");
-if (!isset($_POST)) {
-	exit(createMessageJson('Нет входных данных'));
-}
+
 //проверка капчи
 if (!isset($_POST['g-recaptcha-response']) || !captchaCheck($_POST['g-recaptcha-response'])) {
-	exit(createMessageJson('Не прошла проверка Каптчи'));
+	exit(createMessageJson(false,'Не прошла проверка Каптчи'));
 }
 
 //проверка введённых данных, используем модуль
@@ -16,7 +14,7 @@ $v = new Valitron\Validator($_POST);
 $v->rule('required', ['name', 'email', 'text']);
 $v->rule('email', 'email');
 if(!$v->validate()) {
-  exit (createMessageJson('Неверные введённые данные'));
+  exit (createMessageJson(false,'Неверные введённые данные'));
 }
 //echo( $_post );
 $body ='';
@@ -28,5 +26,6 @@ $body ='';
 
 $res = sendEmail($_POST['name'],$_POST['email'],'Сообщение с сайта visermort.ru',$body );
 
-exit(createMessageJson($res));
+if ($res)exit (createMessageJson(false,$res)); else
+	exit(createMessageJson(true,'Ваше сообщение отправлено!'));
 

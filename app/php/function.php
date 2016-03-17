@@ -3,6 +3,8 @@
 function sendEmail($name,$email,$subject,$body) {
 		//непосредственно почта
 		$mail = new PHPMailer;
+		$mail -> setLanguage('ru', '../lib/phpmailer/phpmailer/language/phpmailer.lang-ru.php');
+	    $mail -> CharSet = "utf-8";
 		//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 		//$mail->isSMTP();                                      // Set mailer to use SMTP
 		//$mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
@@ -28,7 +30,7 @@ function sendEmail($name,$email,$subject,$body) {
 		if(!$mail->send()) {
 		    return 'Сообщение не отправлено '.$mail->ErrorInfo;
 		} else {
-		    return 'Сообщение отправлено';
+		    return 0;
 		}
 }//sendEmail
 
@@ -64,8 +66,8 @@ function captchaCheck($request) {
 
   //для возврата в JS сообщений - кодируем их в Json
 function createMessageJson($status,$mess) {
-	$res['status'] = $status;
-	$res['message'] = $mess;
+	$res['stat'] = $status;
+	$res['text'] = $mess;
     return json_encode($res);
 }
 
@@ -154,6 +156,7 @@ function readProjects(){
 	try {
 		$resArray= [];
 		$database = new PDO('mysql:host='.dbhost.';dbname='.dbname, dblogin,dbpassword); //подключение к базе
+		$database -> query("SET NAMES 'utf8'");
 		$qres = $database-> prepare('SELECT * FROM `projects`');
 		$qres -> execute();
 		while ($row = $qres -> fetch()) {

@@ -6,7 +6,7 @@ include_once 'phpsettings.php';
 header("content-type: application/json");
 
 if (!isset($_POST) or !isset($_FILES)) {
-	exit( createMessageJson('Нет входных данных'));
+	exit( createMessageJson(false,'Нет входных данных'));
 }
 
 //foreach($_POST as $key => $value ){$post .=$key.' => '.$value; };
@@ -16,14 +16,14 @@ if (!isset($_POST) or !isset($_FILES)) {
 $v = new Valitron\Validator($_POST);
 $v->rule('required', ['name', 'url', 'description']);
 if(!$v->validate()) {
-	exit (createMessageJson('Неполные данные '.$post));
+	exit (createMessageJson(false,'Неполные данные '.$post));
 }
 
 //cделаем проверку, что выполнена регистрация
 //смотрим , есть ли в сессии логи и пароль, и проверяем
 session_start();  //
 if (!isset($_SESSION) or !isset($_SESSION['password_hash']))
-        	exit (createMessageJson('Не выполнена регистрация в системе'));
+        	exit (createMessageJson(false,'Не выполнена регистрация в системе'));
 $res = checkGroup($_SESSION['password_hash'],admins);
 if ($res) exit (createMessageJson($res));
 
@@ -35,11 +35,11 @@ $description = $_POST['description'];
 $file = $_FILES['image'];
 //проверяем размер файла
 if ($file['size'] == 0 or $file['size'] > 2097152)
-	exit(createMessageJson('Загрузите файл разрешённого размера'));
+	exit(createMessageJson(false,'Загрузите файл разрешённого размера'));
 //провряем формат файла
 $imageinfo = getimagesize($file['tmp_name']);
 if ($imageinfo['mime'] != 'image/gif' and $imageinfo['mime'] != 'image/jpeg' and $imageinfo['mime'] != 'image/png')
-	exit(createMessageJson('Неверный тип файла '.$imageinfo['mime']));
+	exit(createMessageJson(false,'Неверный тип файла '.$imageinfo['mime']));
 //добавляем расширение
 $path_info = pathinfo($file['name']);
 $ftype = strtolower($path_info['extension']);//равширение файла
@@ -57,9 +57,8 @@ $file_dist = $_SERVER["DOCUMENT_ROOT"].uploads.$filename.'.'.$ftype;
 $file_copy_dist = $_SERVER["DOCUMENT_ROOT"].uploads.$filename_copy.'.'.$ftype;
 
 $tmpname = $file['tmp_name'];
-if(move_uploaded_file($tmpname,$file_dist))
-    {$res='файл успешно скопирован';}
-    else {$res = 'Ошибка при сохранении файла ';};
+if(!move_uploaded_file($tmpname,$file_dist))
+     {exit(createMessageJson(false,'Ошибка при обработке файла изображения'));};
 //пока всё норм, далее конвертация
 $img = new abeautifulsite\SimpleImage();
 $img -> load($file_dist) -> resize( 172 , 126 ) -> save($file_copy_dist);
@@ -76,8 +75,7 @@ try{
 	$qres -> execute();
 	$database -> NULL;
 } catch (PDOException $e) {			//ошибка,
-	$res .= "Error!: " . $e->getMessage();
+	$res = "Ошибка!: " . $e->getMessage();
 }
-
-
-exit (createMessageJson('Выполнен перенос данных в базу '. $res));
+if ($res) exit (createMessageJson(false,$res));
+  else exit (createMessageJson(true,'Запись данных выполненa'));

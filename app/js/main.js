@@ -29,10 +29,8 @@ var application = (function (){
 
         //показ выполнения операций с сервером
         var showResult = function(res) {
-            //буду сам парсить
-            console.log(res);
-            popup.show(res.status,res.message);
-            //  alert(mess['message']);
+    //        console.log(res);
+            popup.show(res);
         };
 
         //регистрация      
@@ -48,11 +46,11 @@ var application = (function (){
    //       console.log(content);
           sendAjax("php/register.php",content,
              function(ans){
-                  console.log("Данные на сервер отправлены!");
+              //    console.log("Данные на сервер отправлены!");
                 //  console.log(ans);
                   showResult(ans);
             },function(ans){
-                  console.log("Ошибка при передаче данных на сервер!");
+               //   console.log("Ошибка при передаче данных на сервер!");
                 //  console.log(ans);
                   showResult(ans);
             });
@@ -141,19 +139,20 @@ var application = (function (){
                   url: "php/addproject.php",
                   data: formData
               }).done(function(ans){
-                  // console.log("Данные успешно отправлены на сервер!");
-                  console.log(ans);
-                  location.reload();//перезагрузить страницу, и увидим, что данные отправлены
+                 if (ans.stat) {//успех
+                      location.reload();//перезагрузить страницу, и увидим, что данные отправлены
+                 } else {
+                     showResult(ans);
+                 }
               }).fail(function(ans){
-                  // console.log("Ошибка при отправке данных!");
-                  console.log(ans);
+                  showResult(ans);
               });
               } else{  return false;}
        };
 
        //ввод текста в поле ввода
          var checkElementTyped = function(e){
-      	 	 var element=e.target,
+      	 	 var element = e.target,
       	 	   content = element.value.trim();
    //          console.log(element+'  '+$(this));
       	 	 if (content.length > 0) {
@@ -182,12 +181,12 @@ var application = (function (){
           //  console.log(content);
             sendAjax("php/sendmessage.php",content,
              function(ans){
-                  console.log("Связь с сервером установлена!");
-                  console.log(ans);
+               //   console.log("Связь с сервером установлена!");
+               //   console.log(ans);
                   showResult(ans);
             },function(ans){
-                  console.log("Ошибка связи с сервером!");
-                  console.log(ans);
+               //   console.log("Ошибка связи с сервером!");
+               //   console.log(ans);
                   showResult(ans);
             });
           };//sendmail
@@ -230,28 +229,34 @@ $(document).ready(function(){
 
 var popup = function () {
 
-    showPopup = function(status,text) {
+    showPopup = function(res) {
         var popup = $('.popup'),
             popupMess = $('.popup__text'),
             popupText = '',
-            time=1000;
-        if (status) {
-            popup.removeClass('popup_error');
-            popupTest = test || 'Success';
+            fadeTime=600,
+            charWidth = 10;
+  //      console.log(res);
+  //      console.log(popup);
+        if (res.stat) {
+            popup.removeClass('popuperror');
+            popupText = res.text || 'Success';
         }else {
-            popup.addClass('popup_error');
-            popupTest = test || 'Error';
+            popup.addClass('popuperror');
+            console.log(res);
+            popupText = res.text || 'Error';
         }
-        popupMess.val(popupText);
-
-        popup.stop(true, true).fadeIn(time);
+        popupMess.text(popupText);
+        popup.width(popupText.length * charWidth + 20);
+      //  popup.fadeTo(fadeTime,1 );
 
             function popupHide() {
-                popup.stop(true, true).fadeOut(time);
+                popup.width(0);
+       //         popup.fadeTo( fadeTime, 0);
             }
-        setTimeout(poputHide, 5000);
+        setTimeout(popupHide, 3000);
 
     };
+
 
     return {
         show: showPopup
