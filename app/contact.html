@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--[if lt IE 9]>
-	<!-- build:js scripts/html5shiv.js -->
+	<!-- build:js js/html5shiv.js -->
 	<script type="text/javascript" src="js/html5shiv.js"></script>
 	<!-- endbuild -->
     <![endif]-->
@@ -53,9 +53,25 @@
 					github	
 					</a>
 				</li>
+				<li class="social-item menu-button">
+					<a href="#" class="social-item-link sprite menu-button">
+						menu
+					</a>
+				</li>
 			</ul>
 		</div>
-	</header> 
+		<ul class="nav topmenu">
+			<li class="nav-item ">
+				<a href="index.html" class="menu-item-link about-link"> Обо мне</a>
+			</li>
+			<li class="nav-item ">
+				<a href="portfolio.php" class="menu-item-link portfolio-link">Мои работы</a>
+			</li>
+			<li class="nav-item ">
+				<a href="contact.html" class="menu-item-link contact-link">Обратная связь</a>
+			</li>
+		</ul>
+	</header>
 	<div class="content clearfix">
 		<aside class="sidebar">
 			<ul class="nav">
@@ -85,40 +101,75 @@
 			</div>
 		</aside>
 		<div class="content-area">
-		<section class="content-part content-">
-		    <h1 class="content-header">У вас интересный проект? Напишите мне</h1>
-			<div class="content-content ">
-				<form action="" method="POST" class="form-message">
-					<div class="block-input block-input-name"> 
-					<div class="block-input_validate tooltip validate-name left">введите имя</div>
-						<span class="label-input">Имя</span>
-						<input type="text" name="name" class="send-message__input input-name placeholder validate" placeholder="Как в Вам обращаться" title="Вы не ввели имя">
-					</div>
-					<div class="block-input block-input-email"> 
-					    <div class="block-input_validate tooltip validate-email right">введите email</div>
-						<span class="label-input">Email</span>
-						<input type="text" name="email" class="send-message__input input-email placeholder validate" placeholder="Куда мне писать" title="Вы не ввели email">
-					</div>
-					<div class="block-input-message block-message"> 
-					    <div class="block-input_validate tooltip validate-message left">ваш вопрос</div>
-						<span class="label-input">Сообщение</span>
-						<textarea  cols="40" rows="6" name="text" class="send-message__input input-message placeholder validate" placeholder="Кратко в чём суть" title="Что вы от меня хотите"></textarea>
-					</div>
-					<div class="block-captcha  clearfix">
-					    <div class="block-input_validate tooltip validate-captcha left">вы не робот</div>
-						<span class="label-input ">Подтвердите, что вы не робот</span>
-					<!-- 	<img src="images/captcha.gif"  alt="captcha" class="image-captcha"> -->
-                        <div class="g-recaptcha image-captcha" data-sitekey="6Le3lhcTAAAAAF1WbyOjRaTXKKYuGFbynmxSi6sp"></div>
-						<input type="text" name="captcha" class="send-message__input input-captcha placeholder validate" placeholder="Введите код" title="Вы не ввели код">
-					</div>
-					    <div class="form-message-buttons">
-						<input type="submit" class="button-submit" value="Отправить">
-						<input type="reset" class="button-reset" value="Очистить">
-					</div>
+			<section class="content-part content-">
+				<h1 class="content-header">У вас интересный проект? Напишите мне</h1>
+				<div class="content-content ">
+					<form action="" method="POST" class="form-message">
+						<div class="block-input block-input-name">
+						<div class="block-input_validate tooltip validate-name left">введите имя</div>
+							<span class="label-input">Имя</span>
+							<input type="text" name="name" class="send-message__input input-name placeholder validate" placeholder="Как в Вам обращаться" title="Вы не ввели имя">
+						</div>
+						<div class="block-input block-input-email">
+							<div class="block-input_validate tooltip validate-email right">введите email</div>
+							<span class="label-input">Email</span>
+							<input type="text" name="email" class="send-message__input input-email placeholder validate" placeholder="Куда мне писать" title="Вы не ввели email">
+						</div>
+						<div class="block-input-message block-message">
+							<div class="block-input_validate tooltip validate-message left">ваш вопрос</div>
+							<span class="label-input">Сообщение</span>
+							<textarea  cols="40" rows="6" name="text" class="send-message__input input-message placeholder validate" placeholder="Кратко в чём суть" title="Что вы от меня хотите"></textarea>
+						</div>
+						<div class="block-captcha  clearfix">
+							<div class="block-input_validate tooltip validate-captcha left">вы не робот</div>
+							<span class="label-input ">Подтвердите, что вы не робот</span>
+						<!-- 	<img src="images/captcha.gif"  alt="captcha" class="image-captcha"> -->
+							<div class="g-recaptcha image-captcha" data-sitekey="6Le3lhcTAAAAAF1WbyOjRaTXKKYuGFbynmxSi6sp"></div>
+							<input type="text" name="captcha" class="send-message__input input-captcha placeholder validate" placeholder="Введите код" title="Вы не ввели код">
+						</div>
+							<div class="form-message-buttons">
+							<input type="submit" class="button-submit" value="Отправить">
+							<input type="reset" class="button-reset" value="Очистить">
+						</div>
 
-				</form>
+					</form>
+				</div>
+			</section>
+			<div class="contacts-block-bootom">
+				<ul class="contacts-block-bootom__list">
+					<li class="contacts-item bottom" >
+						<a href="mailto:oxygenn@list.ru" class="contact-item-link bottom email">oxygenn@list.ru</a>
+					</li>
+					<li class="contacts-item bottom ">
+						<a href="tel:+79114135031" class="contact-item-link  bottom phone">+79114135031</a>
+					</li>
+					<li class="contacts-item bottom ">
+						<a href="skype:visermort" class="contact-item-link  bottom skype">visermort</a>
+					</li>
+				</ul>
 			</div>
-		</section>
+			<ul class="socials-bottom ">
+				<li class="social-item">
+					<a href="https://www.facebook.com/ViserMort?ref=bookmarks" class="social-item-link sprite facebook">
+						facebook
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="http://vk.com/id1519895" class="social-item-link sprite vk">
+						vkontakte
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="https://twitter.com/ViserMort" class="social-item-link sprite twitter">
+						twitter
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="https://github.com/visermort" class="social-item-link sprite github">
+						github
+					</a>
+				</li>
+			</ul>
 
 
 		</div>
@@ -159,7 +210,7 @@
 
 	</form>	
 </div>
-	<!-- build:js scripts/vendor.js -->
+	<!-- build:js js/vendor.js -->
 	<!-- bower:js -->
 	<script src='bower/modernizr/modernizr.js'></script>
 	<script src='bower/jquery/jquery.js'></script>
@@ -168,7 +219,7 @@
 	<script src='bower/qtip2/basic/jquery.qtip.js'></script>
 	<!--endbower-->
 	<!-- endbuild -->
-	<!-- build:js scripts/main.js -->
+	<!-- build:js js/main.js -->
 	<script type="text/javascript" src="js/main.js"> </script>
 	<!-- endbuild -->
     <script src='https://www.google.com/recaptcha/api.js'></script>

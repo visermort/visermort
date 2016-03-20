@@ -5,22 +5,25 @@
 }
 
 .form-message {
-	width: 430px;
+	/*width: 430px;*/
+	width: 72%;
 	color: #727070;
-	font-size: 14px;
+	font-size: .875rem;
+	/*font-size: 14px;*/
 	font-family: OpenSansRegular;
 /*	margin-left: 82px;
 	margin-top: -9px;
-*/	margin: -9px 0 0 82px;
+/**!	margin: -9px 0 0 82px;*/
+	margin: -0px auto 0 auto;
 	position: relative;
 }
 .block-input {
-	 width: 190px;
+	 width: 47%;
 	 display: inline-block;
 }
 
 .block-input-message, .block-captcha {
-    width: 405px;
+    width: 100%;
 	margin-top: 14px;
 }
 .block-captcha {
@@ -34,10 +37,11 @@
 .placeholder {
 	box-sizing: border-box;
 	padding-left: 8px;
-	font-size: 12px;
+	font-size: .75rem;
+	/*font-size: 12px;*/
 }
 .input-name, .input-email, .input-captcha{
-	width: 195px;
+	width: 100%;
 	height: 45px;
 	-webkit-border-radius: 2px/4px;
 	-moz-border-radius: 2px/4px;
@@ -54,14 +58,14 @@
 	background-image: linear-gradient(to top, rgba(233,231,231,.45), rgba(251,249,249,0));
 }
 
-.block-input-email {
-	margin-left: 17px;
+.block-input-name {
+	margin-right: 4%;
 }
 
 
 .input-message {
 	resize: none;
-	width: 405px;
+	width: 100%;
 	height: 183px;
 	padding: 12px 9px;
 	-webkit-border-radius: 4px;
@@ -94,10 +98,16 @@
 }
 
 .form-message-buttons {
-	margin : 30px 0 10px 30px;
+	margin : 30px auto 10px auto;
+	padding-left: 4%;
+	padding-right: 4%;
 }
-.button-reset {
-	margin-left: 96px;
+.button-reset, .button-submit {
+	/*margin-left: 96px;*/
+	display: inline-block;
+}
+.button-submit{
+	float: right;
 }
 .block-input, .block-input-message, .block-captcha {
 	position: relative;
@@ -163,4 +173,29 @@
 .validate-captcha {
     top: 49px;
     left: -98px;
+}
+
+/*adaptive*/
+@media screen and (max-width: 768px) {
+}
+
+
+@media screen and (max-width: 640px) {
+	.button-submit, .button-reset {
+		width: 47%;
+	}
+	.form-message {
+		width: 80%;
+	}
+	.block-input {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+}
+@media screen and (max-width: 480px) {
+	.g-recaptcha {
+		margin-left: -21%;
+	}
+
 }

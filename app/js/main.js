@@ -16,6 +16,9 @@ var application = (function (){
            $('.page-add-project__close-button').on('click',cancelOtherForm);//нажате формы закрытия окна добавления проекта
            $('.form-add-project__image-file').on('change',inputFileChange);//изменение input type="file"  добавления проекта
            $(document).on('keydown',handleKeyDown);//отслеживание нажатии клавиши - в нашем слчае отслеживаем Escape для закрытия модальных окон
+            $('.social-item.menu-button').on('click',showTopMainMenu);//кнопка - открывается главное меню мобильной версии
+          $(window).on('resize',windowResize);//при изменениии размера экрана,
+
       };
 
      //нажатие клавиши на форме
@@ -214,7 +217,24 @@ var application = (function (){
         $('.page-add-project').show();
         };//doAddProgect
 
+        var showTopMainMenu = function (e){
+            e.preventDefault();
+            var menu = $('.nav.topmenu'),
+                visible = menu.is(":visible");
+            if (visible) {
+                menu.stop(true,true).fadeOut(500);
+            }else {
+                menu.stop(true,true).fadeIn(500);
+            }
+        };
 
+        var windowResize = function (e){
+            var menuButton = $('.social-item.menu-button'),
+                menu = $('.nav.topmenu');
+            if (!menuButton.is(":visible")) {
+                menu.stop(true,true).fadeOut(500);
+            }
+        };
 
 
 return {

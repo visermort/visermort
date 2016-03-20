@@ -80,9 +80,9 @@
     background-position: -225px -170px;
 }
 
-
-
-.sprite-menu {
+.menu-button {
+    top: 10px;
+    left: 40px;
     width: 25px;
     height: 21px;
     background-position: -202px -224px;
@@ -179,7 +179,7 @@
 .login {
     position: absolute;
     top: 21px;
-    left: 169px; 
+    /*left: 169px;*/
     width: 19px;
     height: 22px;
     background-position: -173px -224px;
@@ -189,7 +189,7 @@
 */    background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
     top: 21px;
-    left: 169px; 
+    /*left: 169px; */
     width: 24px;
     height: 22px;
     background-position: -277px -210px;

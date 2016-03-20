@@ -130,9 +130,8 @@ gulp.task('archive',function (){
  //    return gulp.src('app/css/**/*.css')
  //        .pipe(gulpIf(dev,sourcemaps.init()))
  //        .pipe(autoprefixer({
- //            browsers: ['last 5 versions'],
- //            cascade: false
- //        }))
+ //   browsers: ['last 15 versions', '> 1%', 'ie 8', 'ie 7'],
+// cascade: true       }))
  //        .pipe(cleanCSS())
  //        .pipe(gulpIf(dev,sourcemaps.write()))
  //        .pipe(concatCss("bundle.css"))
