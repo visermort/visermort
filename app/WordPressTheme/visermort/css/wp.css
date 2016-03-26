@@ -1,0 +1,199 @@
+* {
+    outline: none !important; //чтобы не было синей рамки при выделении
+}
+
+.block-input {
+    vertical-align: top;
+}
+input[type="text"],
+input[type="email"],
+textarea
+{
+    padding-left: 8px;
+    font-size: .75rem;
+    width: 100%;
+    height: 45px;
+    -webkit-border-radius: 2px/4px;
+    -moz-border-radius: 2px/4px;
+    border-radius: 2px/4px;
+    background-color: #fbfcfd;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(114,112,112,.1);
+    -moz-box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(114,112,112,.1);
+    box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(114,112,112,.1);
+    border: solid 1px #d6d5d3;
+    background-image: -webkit-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
+    background-image: -moz-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
+    background-image: -o-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
+    background-image: -ms-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
+    background-image: linear-gradient(to top, rgba(233,231,231,.45), rgba(251,249,249,0));
+}
+
+input[type="text"]{
+    margin-right: 4%;
+}
+
+.form-message-buttons p {
+    display: inline-block;
+}
+.form-message-buttons p:last-child {
+    float: right;
+}
+
+.wpcf7-textarea{
+    resize: none;
+    width: 95%;
+    /*width: 100%;*/
+    height: 183px;
+    padding: 12px 9px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fbfcfd;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(114,112,112,.1);
+    -moz-box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(114,112,112,.1);
+    box-shadow: 0 0 1px rgba(255,255,255,.15), 0 1px rgba(255,255,255,.35), inset 0 2px 2px rgba(114,112,112,.1);
+    border: solid 1px #d6d5d3;
+    background-image: -webkit-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
+    background-image: -moz-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
+    background-image: -o-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
+    background-image: -ms-linear-gradient(bottom, rgba(233,231,231,.45), rgba(251,249,249,0));
+    background-image: linear-gradient(to top, rgba(233,231,231,.45), rgba(251,249,249,0));
+}
+
+.wpcf7-submit{
+    width: 125px;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #72ddbf;
+    -webkit-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+    -moz-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+    box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+    border: solid 1px #c3c2c2;
+    background-image: -webkit-linear-gradient(bottom, #43b796, #80e8cb);
+    background-image: -moz-linear-gradient(bottom, #43b796, #80e8cb);
+    background-image: -o-linear-gradient(bottom, #43b796, #80e8cb);
+    background-image: -ms-linear-gradient(bottom, #43b796, #80e8cb);
+    background-image: linear-gradient(to top, #43b796, #80e8cb);
+}
+.wpcf7-submit:hover {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #4ec1a5;/*#fbf9f9;*/
+    -webkit-box-shadow: inset 0 1px rgba(255,255,255,.3);
+    -moz-box-shadow: inset 0 1px rgba(255,255,255,.3);
+    box-shadow: inset 0 1px rgba(255,255,255,.3);
+    border: solid 1px #c3c2c2;
+    background-image: -webkit-linear-gradient(bottom, #3aa087, #5fdcbd);
+    background-image: -moz-linear-gradient(bottom, #3aa087, #5fdcbd);
+    background-image: -o-linear-gradient(bottom, #3aa087, #5fdcbd);
+    background-image: -ms-linear-gradient(bottom, #3aa087, #5fdcbd);
+    background-image: linear-gradient(to top, #3aa087, #5fdcbd);
+}
+
+.label-input {
+    display: block;
+    margin-bottom: -10px;
+}
+
+.content-part.content {
+    margin-top: 0;
+}
+
+.nav {
+    z-index: 1;
+}
+.nav-item a{
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    font-family: OpenSansSemibold;
+    font-size: 1.25rem;
+    color: #727070;
+    padding: 13px 0 13px 29px;
+    background-color: #e9e6e5; /*#bfbfbf;*/
+    -webkit-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
+    -moz-box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
+    box-shadow: 0 2px 1px rgba(9,9,9,.07), inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px #f6f7f7;
+    border: solid 1px #c3c2c2;
+    background-image: -webkit-linear-gradient(bottom, #e9e6e5, #fbf9f9 94%, #fff);
+    background-image: -moz-linear-gradient(bottom, #e9e6e5, #fbf9f9 94%, #fff);
+    background-image: -o-linear-gradient(bottom, #e9e6e5, #fbf9f9 94%, #fff);
+    background-image: -ms-linear-gradient(bottom, #e9e6e5, #fbf9f9 94%, #fff);
+    background-image: linear-gradient(to top, #e9e6e5, #fbf9f9 94%, #fff);
+}
+
+.nav-item a:hover {
+    background-color: #bfbfbf;
+    -webkit-box-shadow: inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px rgba(202,202,202,.61);
+    -moz-box-shadow: inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px rgba(202,202,202,.61);
+    box-shadow: inset 0 -2px 3px rgba(41,41,41,.05), inset 0 0 3px rgba(202,202,202,.61);
+    background-image: -webkit-linear-gradient(bottom, #c2c0c0, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7);
+    background-image: -moz-linear-gradient(bottom, #c2c0c0, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7);
+    background-image: -o-linear-gradient(bottom, #c2c0c0, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7);
+    background-image: -ms-linear-gradient(bottom, #c2c0c0, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7);
+    background-image: linear-gradient(to top, #c2c0c0, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7);
+}
+
+.nav-item.current-menu-item a {
+    background-color: #3eb799;/*#bfbfbf*/
+    -webkit-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+    -moz-box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+    box-shadow: 0 2px 1px rgba(9,9,9,.16), inset 0 1px rgba(255,255,255,.3);
+    border: solid 1px #c3c2c2;
+    background-image: -webkit-linear-gradient(bottom, #3eb799, #7ee8ce);
+    background-image: -moz-linear-gradient(bottom, #3eb799, #7ee8ce);
+    background-image: -o-linear-gradient(bottom, #3eb799, #7ee8ce);
+    background-image: -ms-linear-gradient(bottom, #3eb799, #7ee8ce);
+    background-image: linear-gradient(to top, #3eb799, #7ee8ce);
+}
+
+.nav-item:first-child a {
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius:  3px 3px 0 0;
+    -moz-border-radius:  3px 3px 0 0;
+    border-radius:  3px 3px 0 0;
+}
+.nav-item:last-child a {
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+.topmenu a {
+    padding: 10px 0 10px 10px;
+}
+
+
+.login-area a {
+    display: block;
+    color: #727070;
+    font-family: OpenSansBold;
+    font-size: 0.875rem;
+    font-size: 14px;
+    padding-left: 28px;
+    width: 60px;
+}
+
+.login.logged {
+    width: 24px;
+    background-position: -277px -210px;
+}
+.login.logged:hover {
+    width: 19px;
+    background-position: -173px -224px;
+}
+
+
+@media screen and (max-width: 640px) {
+    .wpcf7-submit, .button-reset {
+        width: 100%;
+    }
+    .form-message-buttons p {
+        width: 47%;
+    }
+
+}
